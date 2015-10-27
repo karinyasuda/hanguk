@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var quizArray  = [AnyObject]()
+    var questionArray  = [AnyObject]()
     
     var correctAnswer:Int = 0
     var falseAnswer:Int = 0
@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         var qArray = [AnyObject]()
+        
         //クイズの問題　30問分の型の用意
-        
         qArray.append(["","","","","",])
         qArray.append(["","","","","",])
         qArray.append(["","","","","",])
@@ -63,9 +63,20 @@ class ViewController: UIViewController {
         qArray.append(["","","","","",])
         qArray.append(["","","","","",])
         qArray.append(["","","","","",])
+        //
         
         
+        while (qArray.count > 0){
+            let index = Int(arc4random_uniform(UInt32(qArray.count)))
+            questionArray.append(qArray[index])
+            qArray.removeAtIndex(index)
         
+        }
+        
+        func choiceQuiz() {
+            questionTextView.text = questionArray[0][0] as! String
+            //選択肢のボタン
+        }
         
     
     }
