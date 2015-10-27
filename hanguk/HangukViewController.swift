@@ -10,16 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var questionArray  = [AnyObject]()
+    var quizArray  = [AnyObject]()
     
     var correctAnswer:Int = 0
     var falseAnswer:Int = 0
     
-    @IBOutlet var questionTextView:UITableView!
+    @IBOutlet var questionTextView:UITextView!
     
-    @IBOutlet var button1:UIButton!
-    @IBOutlet var button2:UIButton!
-    @IBOutlet var button3:UIButton!
+    @IBOutlet var Button1:UIButton!
+    @IBOutlet var Button2:UIButton!
+    @IBOutlet var Button3:UIButton!
     
     
     override func viewDidLoad() {
@@ -68,18 +68,48 @@ class ViewController: UIViewController {
         
         while (qArray.count > 0){
             let index = Int(arc4random_uniform(UInt32(qArray.count)))
-            questionArray.append(qArray[index])
+            quizArray.append(qArray[index])
             qArray.removeAtIndex(index)
         
         }
-        
+        choiceQuiz()
+    }
+    
         func choiceQuiz() {
-            questionTextView.text = questionArray[0][0] as! String
+            questionTextView.text = quizArray[0][0] as! String
             //選択肢のボタン
+            
+            Button1.setTitle( quizArray [0][1] as? String, forState: .Normal)
+            Button2.setTitle( quizArray [0][2] as? String, forState: .Normal)
+            Button3.setTitle( quizArray [0][3] as? String, forState: .Normal)
+
         }
         
-    
+    @IBAction func choiceAnswer(sender: UIButton){
+        if quizArray[0][4] as! Int == sender.tag{
+        
+        correctAnswer++
+        }
+        
+        quizArray.removeAtIndex(0)
+        if quizArray.count == 0{
+            performSegueToResult()
+        } else {
+            choiceQuiz()
+        }
+        
+        }
+    func performSegueToResult(){
+        
+        
+        
     }
+        
+    
+    
+        
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -87,6 +117,6 @@ class ViewController: UIViewController {
     
     }
 
-
 }
+
 
