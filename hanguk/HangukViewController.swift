@@ -79,6 +79,8 @@ class ViewController: UIViewController {
             questionTextView.text = quizArray[0][0] as! String
             //選択肢のボタン
             
+            
+            //選択肢のボタンに選択肢の文　テキストを！
             Button1.setTitle( quizArray [0][1] as? String, forState: .Normal)
             Button2.setTitle( quizArray [0][2] as? String, forState: .Normal)
             Button3.setTitle( quizArray [0][3] as? String, forState: .Normal)
