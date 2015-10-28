@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuizViewController: UIViewController {
     
     var quizArray  = [AnyObject]()
     
@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet var questionTextView:UITextView!
     
     
-    //選択肢ボタン
     @IBOutlet var Button1:UIButton!
     @IBOutlet var Button2:UIButton!
     @IBOutlet var Button3:UIButton!
