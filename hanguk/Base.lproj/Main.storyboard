@@ -43,11 +43,49 @@
                         <outlet property="Button2" destination="MnW-pe-S7c" id="ZOd-r7-l60"/>
                         <outlet property="Button3" destination="a0N-91-IOl" id="2JA-nv-p47"/>
                         <outlet property="questionTextView" destination="3rq-pb-E7s" id="bcE-jR-DAh"/>
+                        <segue destination="4Vg-PM-W5h" kind="show" id="mW4-l8-cEB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="98" y="336"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Uod-sr-2iX">
+            <objects>
+                <viewController id="4Vg-PM-W5h" customClass="ResultViewController" customModule="hanguk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JH5-qF-pne"/>
+                        <viewControllerLayoutGuide type="bottom" id="PyX-ik-JZy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hb4-jk-632">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-kO-bnk">
+                                <rect key="frame" x="140" y="319" width="35" height="30"/>
+                                <state key="normal" title="Buck"/>
+                                <connections>
+                                    <segue destination="Rso-gI-jfh" kind="show" id="65t-ID-4ke"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Yy-wuM">
+                                <rect key="frame" x="152" y="147" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="resultlabel" destination="FQu-Yy-wuM" id="xoa-WC-ulM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Of-XK-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="336"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Uyz-I5-0sU">
@@ -78,26 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRW-H0-T84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-299" y="336"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ZgV-fx-yyt">
-            <objects>
-                <viewController id="eiw-ra-y3F" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wzV-dY-yGo"/>
-                        <viewControllerLayoutGuide type="bottom" id="FUM-x8-T4J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AhK-ee-SUE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aCM-xo-tCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="968" y="336"/>
+            <point key="canvasLocation" x="-266" y="336"/>
         </scene>
     </scenes>
 </document>
