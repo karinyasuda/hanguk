@@ -1,10 +1,12 @@
 //
-//  HangukViewController.swift
+//  QuizViewController.swift
 //  hanguk
 //
 //  Created by Karin on 2015/10/25.
 //  Copyright © 2015年 Karin. All rights reserved.
 //
+
+
 
 import UIKit
 
@@ -17,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var questionTextView:UITextView!
     
+    
+    //選択肢ボタン
     @IBOutlet var Button1:UIButton!
     @IBOutlet var Button2:UIButton!
     @IBOutlet var Button3:UIButton!
@@ -79,7 +83,7 @@ class ViewController: UIViewController {
             questionTextView.text = quizArray[0][0] as! String
             //選択肢のボタン
             
-            
+        
             //選択肢のボタンに選択肢の文　テキストを！
             Button1.setTitle( quizArray [0][1] as? String, forState: .Normal)
             Button2.setTitle( quizArray [0][2] as? String, forState: .Normal)

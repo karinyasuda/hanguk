@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9AA1F5B21BDD1D590031FE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */; };
-		9AA1F5B41BDD1D590031FE17 /* HangukViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B31BDD1D590031FE17 /* HangukViewController.swift */; };
+		9AA1F5B41BDD1D590031FE17 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */; };
 		9AA1F5B71BDD1D590031FE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B51BDD1D590031FE17 /* Main.storyboard */; };
 		9AA1F5B91BDD1D590031FE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B81BDD1D590031FE17 /* Assets.xcassets */; };
 		9AA1F5BC1BDD1D590031FE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5BA1BDD1D590031FE17 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		9AA1F5AE1BDD1D590031FE17 /* hanguk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanguk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AA1F5B31BDD1D590031FE17 /* HangukViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangukViewController.swift; sourceTree = "<group>"; };
+		9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9AA1F5B61BDD1D590031FE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AA1F5B81BDD1D590031FE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AA1F5BB1BDD1D590031FE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */,
-				9AA1F5B31BDD1D590031FE17 /* HangukViewController.swift */,
+				9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */,
 				9AA1F5B51BDD1D590031FE17 /* Main.storyboard */,
 				9AA1F5B81BDD1D590031FE17 /* Assets.xcassets */,
 				9AA1F5BA1BDD1D590031FE17 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA1F5B41BDD1D590031FE17 /* HangukViewController.swift in Sources */,
+				9AA1F5B41BDD1D590031FE17 /* QuizViewController.swift in Sources */,
 				9AA1F5B21BDD1D590031FE17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
