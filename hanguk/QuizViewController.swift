@@ -13,7 +13,7 @@ import UIKit
 class QuizViewController: UIViewController {
     
     //出題数
-    var questionNumber:Int = 5
+    var questionNumber:Int = 30
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
@@ -44,41 +44,57 @@ class QuizViewController: UIViewController {
 //        var qArray = [AnyObject]()
         
         //クイズの問題　30問分の型の用意
-        qArray.append(["6人前","육인분","여섯인분","일곱인분","유인",1])
-        qArray.append(["8枚","팔츤","여덟장","팔층","여덟면",2])
-        qArray.append(["2個","이것","이개","두개","둘캐",3])
-        qArray.append(["9台","","","","",4])
-        qArray.append(["5階","","","","",3])
+//        qArray.append(["6人前","육인분","여섯인분","일곱인분","유인",1])
+//        qArray.append(["8枚","팔츤","여덟장","팔층","여덟면",2])
+//        qArray.append(["2個","이것","이개","두개","둘캐",3])
+//        qArray.append(["9台","","","","",4])
+//        qArray.append(["5階","","","","",3])
+//        
+//        qArray.append(["10月27日","","","","",3])
+//        qArray.append(["4泊","","","","",2])
+//        qArray.append(["봄이(　　　)꽃이 핍니다　春が来れば花が咲きます。","오기 전에","오다","오면","오로",3])
+//        qArray.append(["(　　　)오십시요","오른쯕으로","압으면","앞어","앞으로",4])
+//        qArray.append(["10","","","","",4])
         
-        qArray.append(["10月27日","","","","",3])
-        qArray.append(["4泊","","","","",2])
-        qArray.append(["봄이(　　　)꽃이 핍니다　春が来れば花が咲きます。","오기 전에","오다","오면","오로",3])
-        qArray.append(["(　　　)오십시요","오른쯕으로","압으면","앞어","앞으로",4])
-        qArray.append(["10","","","","",4])
+        qArray.append(["술프다","悲しい","うれしい","くやしい","疲れた",1])
+        qArray.append(["못하다","召し上がる","上手だ","下手だ","えらい",3])
+        qArray.append(["그런대","だから","それなのに","それで","そして",2])
+        qArray.append(["삼각김밥","おかず","のりべん","のりまき","おにぎり",4])
+        qArray.append(["빵","ごはん","部屋","夜","パン",4])
         
-        qArray.append(["11","","","","",1])
-        qArray.append(["12","","","","",3])
-        qArray.append(["13","","","","",2])
-        qArray.append(["14","","","","",4])
-        qArray.append(["15","","","","",4])
+        qArray.append(["열쇠","夢","引越し","鍵","略図",3])
+        qArray.append(["노래방","住所","カラオケ","招待状","歌謡曲",2])
+        qArray.append(["좋은 꿈뀌","おやすみなさい","早く寝てください","先に寝ますね","いい夢みてね",4])
+        qArray.append(["이사하다","引越し","住所","転勤する","説明する",1])
+        qArray.append(["시험","時期","時間","試験","睡眠",3])
         
-        qArray.append(["16","","","","",3])
-        qArray.append(["17","","","","",2])
-        qArray.append(["18","","","","",4])
-        qArray.append(["19","","","","",1])
-        qArray.append(["20","","","","",3])
+        qArray.append(["술","お酒","スープ","さじ","お酢",1])
+        qArray.append(["돈","おもち","お金","木材","金属",2])
+        qArray.append(["돌아가나","招待する","歩いていく","間違える","帰る",4])
+        qArray.append(["사용","使う","あげる","ひっこし","連絡",1])
+        qArray.append(["열락","招待状","使う","連絡","出口",3])
         
-        qArray.append(["21","","","","",1])
-        qArray.append(["22","","","","",2])
-        qArray.append(["23","","","","",4])
-        qArray.append(["24","","","","",1])
-        qArray.append(["25","","","","",3])
+        qArray.append(["설연","理解","略図","解説","説明",4])
+        qArray.append(["조금","少し","さっき","いつか","もうすぐ",1])
+        qArray.append(["다섯봉지","５袋","４まい","５本","６匹",1])
+        qArray.append(["딸","娘","息子","おば","妹",3])
+        qArray.append(["가을","秋","秋です","春","季節",1])
         
-        qArray.append(["26","","","","",4])
-        qArray.append(["27","","","","",2])
-        qArray.append(["28","","","","",1])
-        qArray.append(["29","","","","",3])
-        qArray.append(["30","","","","",1])
+        qArray.append(["방","部屋","パン","ごはん","冬",1])
+        qArray.append(["밤","パン","ごはん","息子","部屋",2])
+        qArray.append(["반찬","秋","さっき","すこし","おかず",4])
+        qArray.append(["주먹밥","巻き寿司","おにぎり","おかず","おかゆ",2])
+        qArray.append(["특히","","","特に","",3])
+        
+        qArray.append(["","船着場","雨","チケット","船",4])
+        qArray.append(["27","〜も","また","チケット","家",2])
+        qArray.append(["28","お宅","壁","家","土",1])
+        qArray.append(["29","週末","祝日","正月","平日",3])
+        qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1])
+        
+        
+        
+        
         
         
 //        //問題をシャッフルしてquizarrayにいれる！格納する！！

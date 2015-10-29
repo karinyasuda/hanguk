@@ -7,6 +7,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="hanguk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -16,54 +17,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-pb-E7s">
-                                <rect key="frame" x="40" y="113" width="240" height="122"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-Pe-uff">
-                                <rect key="frame" x="66" y="291" width="189" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWX-2t-wGC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0N-91-IOl">
                                 <rect key="frame" x="66" y="406" width="189" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" backgroundImage="buttons.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSm-Cp-8NQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnW-pe-S7c">
-                                <rect key="frame" x="66" y="349" width="189" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-pb-E7s">
+                                <rect key="frame" x="40" y="88" width="240" height="122"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqz-Km-8a3"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uu-Gx-Sfk">
-                                <rect key="frame" x="66" y="458" width="189" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="66" y="463" width="189" height="30"/>
+                                <state key="normal" title="Button" backgroundImage="buttons.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaC-wD-iNr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-Pe-uff">
+                                <rect key="frame" x="66" y="292" width="189" height="30"/>
+                                <state key="normal" title="Button" backgroundImage="buttons.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWX-2t-wGC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnW-pe-S7c">
+                                <rect key="frame" x="66" y="349" width="189" height="30"/>
+                                <state key="normal" title="Button" backgroundImage="buttons.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqz-Km-8a3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ipo-7E-mpb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30641409531907671" green="0.46247563395523855" blue="0.56196732954545459" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.8685203346329593" blue="0.59123234726361829" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -74,9 +74,8 @@
                         <outletCollection property="choiceButtons" destination="8uu-Gx-Sfk" collectionClass="NSMutableArray" id="FX8-yV-Urv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="336"/>
+            <point key="canvasLocation" x="101" y="290"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Uod-sr-2iX">
@@ -98,8 +97,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-kO-bnk">
                                 <rect key="frame" x="98" y="400" width="125" height="39"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Buck">
+                                <state key="normal" title="Buck" backgroundImage="buttons.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -107,7 +105,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.30641409530000002" green="0.46247563400000002" blue="0.56196732949999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.8685203346" blue="0.59123234729999996" alpha="0.85999999999999999" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -116,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Of-XK-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="336"/>
+            <point key="canvasLocation" x="515" y="290"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Uyz-I5-0sU">
@@ -131,24 +129,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRI-KB-E13">
-                                <rect key="frame" x="91" y="403" width="138" height="65"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="69" y="400" width="183" height="65"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Start" backgroundImage="buttons.png">
                                     <color key="titleColor" red="0.026587354109999999" green="0.01403004228" blue="0.065111243210000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ntf-Hr-1LT"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.png" translatesAutoresizingMaskIntoConstraints="NO" id="GUz-CW-Vrh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sensu.png" translatesAutoresizingMaskIntoConstraints="NO" id="KE4-Cv-Pb8">
+                                <rect key="frame" x="35" y="58" width="251" height="236"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30641409530000002" green="0.46247563400000002" blue="0.56196732949999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.8685203346" blue="0.59123234729999996" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRW-H0-T84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-266" y="336"/>
+            <point key="canvasLocation" x="-344" y="353"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back1.png" width="320" height="568"/>
+        <image name="back3.png" width="338" height="568"/>
+        <image name="buttons.png" width="347" height="66"/>
+        <image name="sensu.png" width="334" height="253"/>
+    </resources>
 </document>

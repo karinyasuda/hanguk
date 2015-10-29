@@ -14,6 +14,10 @@
 		9AA1F5BC1BDD1D590031FE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5BA1BDD1D590031FE17 /* LaunchScreen.storyboard */; };
 		9AA1F5C71BDD1D590031FE17 /* hangukTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5C61BDD1D590031FE17 /* hangukTests.swift */; };
 		9AA1F5D21BDD1D5A0031FE17 /* hangukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5D11BDD1D5A0031FE17 /* hangukUITests.swift */; };
+		9AB0F6411BE1B95800EF663F /* buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0F6401BE1B95800EF663F /* buttons.png */; settings = {ASSET_TAGS = (); }; };
+		9AB0F6431BE1D57400EF663F /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0F6421BE1D57400EF663F /* back1.png */; settings = {ASSET_TAGS = (); }; };
+		9AB0F64B1BE1E2C300EF663F /* back3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0F64A1BE1E2C300EF663F /* back3.png */; settings = {ASSET_TAGS = (); }; };
+		9AB0F64D1BE1E30900EF663F /* sensu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0F64C1BE1E30900EF663F /* sensu.png */; settings = {ASSET_TAGS = (); }; };
 		9AFD7C901BE08D19003B575A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,10 @@
 		9AA1F5CD1BDD1D5A0031FE17 /* hangukUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangukUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA1F5D11BDD1D5A0031FE17 /* hangukUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangukUITests.swift; sourceTree = "<group>"; };
 		9AA1F5D31BDD1D5A0031FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB0F6401BE1B95800EF663F /* buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttons.png; sourceTree = "<group>"; };
+		9AB0F6421BE1D57400EF663F /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
+		9AB0F64A1BE1E2C300EF663F /* back3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back3.png; sourceTree = "<group>"; };
+		9AB0F64C1BE1E30900EF663F /* sensu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sensu.png; sourceTree = "<group>"; };
 		9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +107,10 @@
 		9AA1F5B01BDD1D590031FE17 /* hanguk */ = {
 			isa = PBXGroup;
 			children = (
+				9AB0F64C1BE1E30900EF663F /* sensu.png */,
+				9AB0F6401BE1B95800EF663F /* buttons.png */,
+				9AB0F64A1BE1E2C300EF663F /* back3.png */,
+				9AB0F6421BE1D57400EF663F /* back1.png */,
 				9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */,
 				9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */,
 				9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */,
@@ -233,6 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA1F5BC1BDD1D590031FE17 /* LaunchScreen.storyboard in Resources */,
+				9AB0F6431BE1D57400EF663F /* back1.png in Resources */,
+				9AB0F64D1BE1E30900EF663F /* sensu.png in Resources */,
+				9AB0F6411BE1B95800EF663F /* buttons.png in Resources */,
+				9AB0F64B1BE1E2C300EF663F /* back3.png in Resources */,
 				9AA1F5B91BDD1D590031FE17 /* Assets.xcassets in Resources */,
 				9AA1F5B71BDD1D590031FE17 /* Main.storyboard in Resources */,
 			);
