@@ -35,12 +35,6 @@
                                     <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSm-Cp-8NQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="f" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-pb-E7s">
-                                <rect key="frame" x="40" y="50" width="240" height="122"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uu-Gx-Sfk">
                                 <rect key="frame" x="66" y="463" width="189" height="30"/>
                                 <state key="normal" title="Button" backgroundImage="buttons.png">
@@ -80,7 +74,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="questionLabel" destination="VTP-xq-Mrl" id="4De-4l-HCe"/>
-                        <outlet property="questionTextView" destination="3rq-pb-E7s" id="ynw-X2-qv7"/>
                         <outletCollection property="choiceButtons" destination="ujW-Pe-uff" collectionClass="NSMutableArray" id="J59-3H-sk6"/>
                         <outletCollection property="choiceButtons" destination="MnW-pe-S7c" collectionClass="NSMutableArray" id="7xd-SZ-LVx"/>
                         <outletCollection property="choiceButtons" destination="a0N-91-IOl" collectionClass="NSMutableArray" id="E6I-RM-Lcd"/>
