@@ -30,6 +30,9 @@ class QuizViewController: UIViewController {
     //クイズの問題を表示するtextview
     @IBOutlet var questionTextView:UITextView!
     
+    @IBOutlet var questionLabel:UILabel!
+    
+    
     @IBOutlet var choiceButtons: Array<UIButton>!
     //選択肢のボタン
 //    @IBOutlet var Button1:UIButton!
@@ -125,7 +128,8 @@ class QuizViewController: UIViewController {
         //クイズの問題文をシャッフルしてTextViewにセット
         random = Int(arc4random_uniform(UInt32(qArray.count)))
         questionTextView.text = qArray[random][0] as! NSString as String
-        
+//        questionLabel.text = qArray[random][0] as! NSString as String
+//        self.questionLabel.font = UIFont(name:"THEHonge Nemo", size:UIFont.labelFontSize())
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
         for var i = 0; i < choiceButtons.count; i++ {
             choiceButtons[i].setTitle((qArray[random][i+1] as! NSString) as NSString as String, forState: .Normal)
