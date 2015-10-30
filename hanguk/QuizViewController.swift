@@ -13,7 +13,7 @@ import UIKit
 class QuizViewController: UIViewController {
     
     //出題数
-    var questionNumber:Int = 5
+    var questionNumber:Int = 30
 
     
     //クイズの問題を入れる配列
@@ -29,7 +29,7 @@ class QuizViewController: UIViewController {
     var correctAnswer:Int = 0
     
     //クイズの問題を表示するtextview
-    @IBOutlet var questionTextView:UITextView!
+//    @IBOutlet var questionTextView:UITextView!
     
     @IBOutlet var questionLabel:UILabel!
     
@@ -88,7 +88,7 @@ class QuizViewController: UIViewController {
         qArray.append(["밤","パン","ごはん","息子","部屋",2])
         qArray.append(["반찬","秋","さっき","すこし","おかず",4])
         qArray.append(["주먹밥","巻き寿司","おにぎり","おかず","おかゆ",2])
-        qArray.append(["특히","","","特に","",3])
+        qArray.append(["특히","聞き取り","悲しみ","特に","楽しい",3])
         
         qArray.append(["배","船着場","雨","チケット","船",4])
         qArray.append(["또","〜も","また","チケット","家",2])

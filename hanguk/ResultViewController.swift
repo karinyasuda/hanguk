@@ -11,7 +11,10 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var correctAnswer:Int = 0
-    @IBOutlet var resultlabel: UILabel!
+    
+//    var questionNumber:Int = 0
+    @IBOutlet var resultlabel : UILabel!
+//    @IBOutlet var sumLabel : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,8 @@ class ResultViewController: UIViewController {
         
         
         resultlabel.text = "\(correctAnswer)"
+//        sumLabel.text = "\(questionNumber)"
+        
     }
 
     override func didReceiveMemoryWarning() {
