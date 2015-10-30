@@ -36,11 +36,7 @@ class QuizViewController: UIViewController {
     
     @IBOutlet var choiceButtons: Array<UIButton>!
     //選択肢のボタン
-//    @IBOutlet var Button1:UIButton!
-//    @IBOutlet var Button2:UIButton!
-//    @IBOutlet var Button3:UIButton!
-//    @IBOutlet var Button4:UIButton!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,17 +44,6 @@ class QuizViewController: UIViewController {
 //        var qArray = [AnyObject]()
         
         //クイズの問題　30問分の型の用意
-//        qArray.append(["6人前","육인분","여섯인분","일곱인분","유인",1])
-//        qArray.append(["8枚","팔츤","여덟장","팔층","여덟면",2])
-//        qArray.append(["2個","이것","이개","두개","둘캐",3])
-//        qArray.append(["9台","","","","",4])
-//        qArray.append(["5階","","","","",3])
-//        
-//        qArray.append(["10月27日","","","","",3])
-//        qArray.append(["4泊","","","","",2])
-//        qArray.append(["봄이(　　　)꽃이 핍니다　春が来れば花が咲きます。","오기 전에","오다","오면","오로",3])
-//        qArray.append(["(　　　)오십시요","오른쯕으로","압으면","앞어","앞으로",4])
-//        qArray.append(["10","","","","",4])
         
         qArray.append(["술프다","悲しい","うれしい","くやしい","疲れた",1])
         qArray.append(["못하다","召し上がる","上手だ","下手だ","えらい",3])
@@ -122,6 +107,7 @@ class QuizViewController: UIViewController {
             choiceButtons[i].tag = i + 1;
         }
     }
+    
     
     
     @IBAction func choiceAnswer(sender: UIButton) {

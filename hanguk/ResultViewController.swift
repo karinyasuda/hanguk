@@ -22,7 +22,7 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        resultlabel.text = "\(correctAnswer)"
+//        resultlabel.text = "\(correctAnswer)"
 //        sumLabel.text = "\(questionNumber)"
         
     }

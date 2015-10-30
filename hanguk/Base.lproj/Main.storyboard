@@ -80,7 +80,7 @@
                         <outletCollection property="choiceButtons" destination="MnW-pe-S7c" collectionClass="NSMutableArray" id="7xd-SZ-LVx"/>
                         <outletCollection property="choiceButtons" destination="a0N-91-IOl" collectionClass="NSMutableArray" id="E6I-RM-Lcd"/>
                         <outletCollection property="choiceButtons" destination="8uu-Gx-Sfk" collectionClass="NSMutableArray" id="FX8-yV-Urv"/>
-                        <segue destination="4Vg-PM-W5h" kind="show" identifier="ResultView" id="oOU-tM-GGy"/>
+                        <segue destination="4Vg-PM-W5h" kind="show" identifier="ResultView" id="wUA-XP-Hbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,14 +118,6 @@
                                     <segue destination="Rso-gI-jfh" kind="show" id="oZX-Fs-pr2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-XO-Fk8">
-                                <rect key="frame" x="164" y="239" width="127" height="51"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Yy-wuM">
                                 <rect key="frame" x="75" y="124" width="148" height="166"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="110"/>
@@ -138,9 +130,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="resultlabel" destination="FQu-Yy-wuM" id="xoa-WC-ulM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Of-XK-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,14 +178,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="ntf-Hr-1LT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-fg-q9E">
-                                <rect key="frame" x="90" y="156" width="266" height="89"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
