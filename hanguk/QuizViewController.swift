@@ -13,7 +13,8 @@ import UIKit
 class QuizViewController: UIViewController {
     
     //出題数
-    var questionNumber:Int = 30
+    var questionNumber:Int = 5
+
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
@@ -89,40 +90,19 @@ class QuizViewController: UIViewController {
         qArray.append(["주먹밥","巻き寿司","おにぎり","おかず","おかゆ",2])
         qArray.append(["특히","","","特に","",3])
         
-        qArray.append(["","船着場","雨","チケット","船",4])
-        qArray.append(["27","〜も","また","チケット","家",2])
-        qArray.append(["28","お宅","壁","家","土",1])
-        qArray.append(["29","週末","祝日","正月","平日",3])
+        qArray.append(["배","船着場","雨","チケット","船",4])
+        qArray.append(["또","〜も","また","チケット","家",2])
+        qArray.append(["댁","お宅","壁","家","土",1])
+        qArray.append(["설날","週末","祝日","正月","平日",3])
         qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1])
         
         
         
         
-        
-        
-//        //問題をシャッフルしてquizarrayにいれる！格納する！！
-//        while (qArray.count > 0){
-//            let index = Int(arc4random_uniform(UInt32(qArray.count)))
-//            quizArray.append(qArray[index])
-//            qArray.removeAtIndex(index)
-//        
-//        }
+  
         choiceQuiz()
     }
-    
-//    func choiceQuiz() {
-//        print(quizArray.count)
-//        questionTextView.text = quizArray[0][0] as! String
-//        //選択肢のボタン
-//            
-//        
-//        //選択肢のボタンに選択肢の文　テキストを！
-//        Button1.setTitle( quizArray [0][1] as? String, forState: .Normal)
-//        Button2.setTitle( quizArray [0][2] as? String, forState: .Normal)
-//        Button3.setTitle( quizArray [0][3] as? String, forState: .Normal)
-//        Button4.setTitle( quizArray [0][4] as? String, forState: .Normal)
-//
-//        }
+
     func choiceQuiz() {
         print(qArray.count)
         //クイズの問題文をシャッフルしてTextViewにセット
@@ -164,12 +144,12 @@ class QuizViewController: UIViewController {
     
     
     func performSegueToResult() {
-        performSegueWithIdentifier("toResultView", sender: nil)
+        performSegueWithIdentifier("ResultView", sender: nil)
     }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "toResultView") {
+        if (segue.identifier == "ResultView") {
             let ResultView : ResultViewController = segue.destinationViewController as! ResultViewController
 
             

@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="단어" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-xq-Mrl">
-                                <rect key="frame" x="78" y="205" width="171" height="55"/>
+                                <rect key="frame" x="40" y="201" width="241" height="55"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -78,11 +78,12 @@
                         <outletCollection property="choiceButtons" destination="MnW-pe-S7c" collectionClass="NSMutableArray" id="7xd-SZ-LVx"/>
                         <outletCollection property="choiceButtons" destination="a0N-91-IOl" collectionClass="NSMutableArray" id="E6I-RM-Lcd"/>
                         <outletCollection property="choiceButtons" destination="8uu-Gx-Sfk" collectionClass="NSMutableArray" id="FX8-yV-Urv"/>
+                        <segue destination="4Vg-PM-W5h" kind="show" identifier="ResultView" id="XRO-Ca-mMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101" y="290"/>
+            <point key="canvasLocation" x="125" y="290"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Uod-sr-2iX">
@@ -97,12 +98,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F49-C9-7Da">
-                                <rect key="frame" x="-3" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="1" green="0.8685203346" blue="0.59123234729999996" alpha="0.85999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="0.8685203346" blue="0.59123234729999996" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.png" translatesAutoresizingMaskIntoConstraints="NO" id="S0d-Vy-5CC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Yy-wuM">
                                 <rect key="frame" x="86" y="114" width="148" height="166"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="110"/>
