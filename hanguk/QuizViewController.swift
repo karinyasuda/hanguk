@@ -5,16 +5,14 @@
 //  Created by Karin on 2015/10/25.
 //  Copyright © 2015年 Karin. All rights reserved.
 //
-
-
+//var sum:Int = 0
 
 import UIKit
 
 class QuizViewController: UIViewController {
     
     //出題数
-    var questionNumber:Int = 30
-
+    var questionNumber:Int = 10
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
@@ -33,6 +31,11 @@ class QuizViewController: UIViewController {
     
     @IBOutlet var questionLabel:UILabel!
     
+    @IBOutlet var plusImage:UIImageView!
+    @IBOutlet var minusImage:UIImageView!
+    
+    
+    
     
     @IBOutlet var choiceButtons: Array<UIButton>!
     //選択肢のボタン
@@ -44,6 +47,9 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.minusImage.hidden = true
+        self.plusImage.hidden = true
         
 //        var qArray = [AnyObject]()
         
@@ -104,6 +110,7 @@ class QuizViewController: UIViewController {
     }
 
     func choiceQuiz() {
+        
         print(qArray.count)
         //クイズの問題文をシャッフルしてTextViewにセット
         random = Int(arc4random_uniform(UInt32(qArray.count)))
@@ -131,7 +138,12 @@ class QuizViewController: UIViewController {
         if qArray[random][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
+            self.plusImage.hidden = false
+            self.minusImage.hidden = true
         }
+        else{
+        self.plusImage.hidden = true
+        self.minusImage.hidden = false}
         
 //        quizArray.removeAtIndex(0)
         //解いた問題数の合計が予め設定していた問題数に達したら結果画面へ
@@ -141,8 +153,11 @@ class QuizViewController: UIViewController {
         }
 //            else {
 //            choiceQuiz()
+//        self.minusImage.hidden = true
+//        self.plusImage.hidden = true
         qArray.removeAtIndex(random)
         choiceQuiz()
+
     }
     
     

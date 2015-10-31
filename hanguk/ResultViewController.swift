@@ -12,7 +12,7 @@ class ResultViewController: UIViewController {
     
     var correctAnswer:Int = 0
     
-//    var questionNumber:Int = 0
+//    var sum:Int = 0
     @IBOutlet var resultlabel : UILabel!
 //    @IBOutlet var sumLabel : UILabel!
 
@@ -23,7 +23,7 @@ class ResultViewController: UIViewController {
         
         
         resultlabel.text = "\(correctAnswer)"
-//        sumLabel.text = "\(questionNumber)"
+//        sumLabel.text = "\(sum+1)"
         
     }
 
