@@ -13,10 +13,7 @@ class QuizViewController: UIViewController {
     
     //出題数
     var questionNumber:Int = 10
-<<<<<<< HEAD
-=======
 
->>>>>>> d2cfd80fcf2ae3cc1c8f10d4f21f6fce03543536
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
