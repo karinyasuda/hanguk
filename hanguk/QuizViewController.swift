@@ -40,6 +40,7 @@ class QuizViewController: UIViewController {
     
     @IBOutlet var choiceButtons: Array<UIButton>!
     //選択肢のボタン
+    
 
     
     override func viewDidLoad() {
