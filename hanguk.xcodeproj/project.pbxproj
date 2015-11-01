@@ -29,7 +29,6 @@
 		9A49E8761BE6613A004C8F2D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A49E84F1BE6613A004C8F2D /* Icon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		9A49E8771BE6613A004C8F2D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A49E8501BE6613A004C8F2D /* iTunesArtwork.png */; settings = {ASSET_TAGS = (); }; };
 		9A49E8781BE6613A004C8F2D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A49E8511BE6613A004C8F2D /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
-		9A49E8791BE6613A004C8F2D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E8521BE6613A004C8F2D /* README.md */; settings = {ASSET_TAGS = (); }; };
 		9AA1F5B21BDD1D590031FE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */; };
 		9AA1F5B41BDD1D590031FE17 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */; };
 		9AA1F5B71BDD1D590031FE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B51BDD1D590031FE17 /* Main.storyboard */; };
@@ -84,7 +83,6 @@
 		9A49E84F1BE6613A004C8F2D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9A49E8501BE6613A004C8F2D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		9A49E8511BE6613A004C8F2D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		9A49E8521BE6613A004C8F2D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AA1F5AE1BDD1D590031FE17 /* hanguk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanguk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				9A49E84F1BE6613A004C8F2D /* Icon@2x.png */,
 				9A49E8501BE6613A004C8F2D /* iTunesArtwork.png */,
 				9A49E8511BE6613A004C8F2D /* iTunesArtwork@2x.png */,
-				9A49E8521BE6613A004C8F2D /* README.md */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -400,7 +397,6 @@
 			files = (
 				9AA1F5B41BDD1D590031FE17 /* QuizViewController.swift in Sources */,
 				9AA1F5B21BDD1D590031FE17 /* AppDelegate.swift in Sources */,
-				9A49E8791BE6613A004C8F2D /* README.md in Sources */,
 				9AFD7C901BE08D19003B575A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
