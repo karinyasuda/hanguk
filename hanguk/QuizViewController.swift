@@ -87,11 +87,7 @@ class QuizViewController: UIViewController {
         qArray.append(["댁","お宅","壁","家","土",1])
         qArray.append(["설날","週末","祝日","正月","平日",3])
         qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1])
-        
-        
-        
-        
-  
+
         choiceQuiz()
     }
 
