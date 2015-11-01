@@ -88,7 +88,7 @@
                         <outletCollection property="choiceButtons" destination="MnW-pe-S7c" collectionClass="NSMutableArray" id="7xd-SZ-LVx"/>
                         <outletCollection property="choiceButtons" destination="a0N-91-IOl" collectionClass="NSMutableArray" id="E6I-RM-Lcd"/>
                         <outletCollection property="choiceButtons" destination="8uu-Gx-Sfk" collectionClass="NSMutableArray" id="FX8-yV-Urv"/>
-                        <segue destination="4Vg-PM-W5h" kind="show" identifier="ResultView" id="oOU-tM-GGy"/>
+                        <segue destination="4Vg-PM-W5h" kind="show" identifier="ResultView" id="wUA-XP-Hbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,6 +117,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.png" translatesAutoresizingMaskIntoConstraints="NO" id="S0d-Vy-5CC">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-XO-Fk8">
                                 <rect key="frame" x="164" y="239" width="127" height="51"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="36"/>
@@ -125,8 +126,19 @@
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-kO-bnk">
+                                <rect key="frame" x="98" y="400" width="125" height="39"/>
+                                <state key="normal" title="Buck" backgroundImage="buttons.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rso-gI-jfh" kind="show" id="oZX-Fs-pr2"/>
+                                </connections>
+                            </button>
+>>>>>>> d2cfd80fcf2ae3cc1c8f10d4f21f6fce03543536
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Yy-wuM">
-                                <rect key="frame" x="75" y="124" width="148" height="166"/>
+                                <rect key="frame" x="86" y="117" width="148" height="166"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="110"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -146,9 +158,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="resultlabel" destination="FQu-Yy-wuM" id="xoa-WC-ulM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Of-XK-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
