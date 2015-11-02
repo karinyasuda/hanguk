@@ -13,6 +13,7 @@ class QuizViewController: UIViewController {
     
     //出題数
     var questionNumber:Int = 10
+    
 
     
     //クイズの問題を入れる配列
