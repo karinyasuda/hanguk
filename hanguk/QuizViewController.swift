@@ -137,12 +137,12 @@ class QuizViewController: UIViewController {
         if sum == questionNumber {
             performSegueToResult()
         }
-//            else {
+            else {
 //            choiceQuiz()
 //        self.minusImage.hidden = true
 //        self.plusImage.hidden = true
         qArray.removeAtIndex(random)
-        choiceQuiz()
+            choiceQuiz()}
 
     }
     
