@@ -10,8 +10,8 @@
 import UIKit
 import GoogleMobileAds
 
-class QuizViewController: UIViewController , GADBannerViewDelegate{
-    
+class QuizViewController: UIViewController, GADBannerViewDelegate{
+
     //出題数
     var questionNumber:Int = 10
     
@@ -29,11 +29,10 @@ class QuizViewController: UIViewController , GADBannerViewDelegate{
     //正解数
     var correctAnswer:Int = 0
     
-    //クイズの問題を表示するtextview
-//    @IBOutlet var questionTextView:UITextView!
-    
+    //クイズの問題を表示するlabel
     @IBOutlet var questionLabel:UILabel!
-    
+
+    //plusとminusの画像を表示するためのimageview
     @IBOutlet var plusImage:UIImageView!
     @IBOutlet var minusImage:UIImageView!
     
@@ -94,6 +93,9 @@ class QuizViewController: UIViewController , GADBannerViewDelegate{
         //ここで問題を表示する！
         choiceQuiz()
         
+        //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+        //ここ、GOOGLE ADMOB
+        
         let bannerView:GADBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
         bannerView.delegate = self
@@ -104,6 +106,8 @@ class QuizViewController: UIViewController , GADBannerViewDelegate{
         self.view.addSubview(bannerView)
         
         
+        
+        
     }
 
     func choiceQuiz() {
@@ -111,13 +115,10 @@ class QuizViewController: UIViewController , GADBannerViewDelegate{
         print(qArray.count)
         //クイズの問題文をシャッフルしてTextViewにセット
         random = Int(arc4random_uniform(UInt32(qArray.count)))
-//        questionTextView.text = qArray[random][0] as! NSString as String
-        
         
         questionLabel.text = qArray[random][0] as! NSString as String
 
         
-        //        self.questionLabel.font = UIFont(name:"THEHonge Nemo", size:UIFont.labelFontSize())
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
         for var i = 0; i < choiceButtons.count; i++ {
             choiceButtons[i].setTitle((qArray[random][i+1] as! NSString) as NSString as String, forState: .Normal)
@@ -128,11 +129,10 @@ class QuizViewController: UIViewController , GADBannerViewDelegate{
     }
     
     
-    
+    //答えのボタンを４つの中から選んだ時のアクション
     @IBAction func choiceAnswer(sender: UIButton) {
         sum++
         print("random \(random)")
-//        if quizArray[0][5] as! Int == sender.tag {
         if qArray[random][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
@@ -142,35 +142,33 @@ class QuizViewController: UIViewController , GADBannerViewDelegate{
         else{
         self.plusImage.hidden = true
         self.minusImage.hidden = false}
-        
-//        quizArray.removeAtIndex(0)
-        //解いた問題数の合計が予め設定していた問題数に達したら結果画面へ
-//        if quizArray.count == 0 {
+
+        //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
+
         if sum == questionNumber {
             performSegueToResult()
         }
-            else {
-//            choiceQuiz()
-//        self.minusImage.hidden = true
-//        self.plusImage.hidden = true
-        qArray.removeAtIndex(random)
-            choiceQuiz()}
+        else {
+            qArray.removeAtIndex(random)
+            choiceQuiz()
+        }
 
     }
     
     
-    
+    //結果画面への遷移segue
     func performSegueToResult() {
         performSegueWithIdentifier("ResultView", sender: nil)
     }
     
     
+    //データ受け渡してる？
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
         if (segue.identifier == "ResultView") {
             let ResultView : ResultViewController = segue.destinationViewController as! ResultViewController
 
-            
-//            let resultView = segue.destinationViewController as! ResultViewController
+
             ResultView.correctAnswer = self.correctAnswer
         }
     }
