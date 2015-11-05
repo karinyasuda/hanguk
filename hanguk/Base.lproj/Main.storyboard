@@ -93,6 +93,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="true.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-mx-1ZI">
                                 <rect key="frame" x="40" y="331" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLV-ki-r6O">
+                                <rect key="frame" x="234" y="530" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSb-wJ-JqS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -130,6 +137,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="minusImage" destination="gUK-KR-OB0" id="PwT-sF-EeE"/>
+                        <outlet property="nextButton" destination="KLV-ki-r6O" id="O1S-dS-ASO"/>
                         <outlet property="plusImage" destination="tYL-mx-1ZI" id="hJI-hY-HG0"/>
                         <outlet property="questionLabel" destination="VTP-xq-Mrl" id="4De-4l-HCe"/>
                         <outletCollection property="choiceButtons" destination="ujW-Pe-uff" collectionClass="NSMutableArray" id="J59-3H-sk6"/>

@@ -40,6 +40,10 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
     
     
     
+    @IBOutlet var nextButton:UIButton!
+    
+    
+    
     
     @IBOutlet var choiceButtons: Array<UIButton>!
     //選択肢のボタン
@@ -113,8 +117,12 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
     }
 
     func choiceQuiz() {
-        
+//        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "hidden():", userInfo: nil, repeats: true)
         print(qArray.count)
+        self.plusImage.hidden = true
+        self.minusImage.hidden = true
+        
+        
         //クイズの問題文をシャッフルしてTextViewにセット
         random = Int(arc4random_uniform(UInt32(qArray.count)))
         
@@ -138,28 +146,53 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
         print("random \(random)")
         
         
+//        
+//        if timer.valid == true {
+//            
+//            //timerを破棄する.
+//            timer.invalidate()}
+//        
+//        else{
+//            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden():", userInfo: nil, repeats: true)
+//        
         
-        if timer.valid == true {
-            
-            //timerを破棄する.
-            timer.invalidate()}
         
-        else if qArray[random][5] as! Int == sender.tag {
+        if qArray[random][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
             self.plusImage.hidden = false
             self.minusImage.hidden = true
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
-        
+//            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
         }
-        else{
+        else {
             self.plusImage.hidden = true
             self.minusImage.hidden = false
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+//            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+            }
         
-        }
         //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
 
+        if sum == questionNumber {
+            performSegueToResult()
+        }
+//        else {
+//            qArray.removeAtIndex(random)
+//            choiceQuiz()
+//        }
+
+    }
+    @IBAction func nextButton(sender:UIButton){
+        
+        choiceQuiz()
+    }
+    
+    
+
+    
+//    func hidden(){
+//        self.plusImage.hidden = true
+//        self.minusImage.hidden = true
+//        
 //        if sum == questionNumber {
 //            performSegueToResult()
 //        }
@@ -167,26 +200,8 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
 //            qArray.removeAtIndex(random)
 //            choiceQuiz()
 //        }
+//    }
 
-    }
-    
-    
-    func hidden(){
-        self.plusImage.hidden = true
-        self.minusImage.hidden = true
-        
-        if sum == questionNumber {
-            performSegueToResult()
-        }
-        else {
-            qArray.removeAtIndex(random)
-            choiceQuiz()
-        }
-
-        
-        
-    }
-    
     
     
     
