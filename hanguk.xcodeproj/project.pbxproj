@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A201C441BE3CD110067B3D7 /* false.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A201C421BE3CD110067B3D7 /* false.png */; settings = {ASSET_TAGS = (); }; };
 		9A201C451BE3CD110067B3D7 /* true.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A201C431BE3CD110067B3D7 /* true.png */; settings = {ASSET_TAGS = (); }; };
+		9A8D36A01BEB7A670052B4E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
 		9AA1F5B21BDD1D590031FE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */; };
 		9AA1F5B41BDD1D590031FE17 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */; };
 		9AA1F5B71BDD1D590031FE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B51BDD1D590031FE17 /* Main.storyboard */; };
@@ -50,7 +51,6 @@
 		9AF296061BEB11560040C62A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296051BEB11560040C62A /* EventKitUI.framework */; };
 		9AF296081BEB11690040C62A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296071BEB11690040C62A /* StoreKit.framework */; };
 		9AF2960A1BEB11790040C62A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296091BEB11790040C62A /* SystemConfiguration.framework */; };
-		9AF2960E1BEB31320040C62A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF2960D1BEB31320040C62A /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
 		9AFD7C901BE08D19003B575A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -74,6 +74,7 @@
 /* Begin PBXFileReference section */
 		9A201C421BE3CD110067B3D7 /* false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = false.png; sourceTree = "<group>"; };
 		9A201C431BE3CD110067B3D7 /* true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true.png; sourceTree = "<group>"; };
+		9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9AA1F5AE1BDD1D590031FE17 /* hanguk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanguk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -121,8 +122,6 @@
 		9AF296051BEB11560040C62A /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		9AF296071BEB11690040C62A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9AF296091BEB11790040C62A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9AF2960B1BEB2FD10040C62A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../Desktop/GoogleMobileAdsSdkiOS-7.5.2/GoogleMobileAds.framework"; sourceTree = "<group>"; };
-		9AF2960D1BEB31320040C62A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,10 +133,10 @@
 				9AF2960A1BEB11790040C62A /* SystemConfiguration.framework in Frameworks */,
 				9AF296081BEB11690040C62A /* StoreKit.framework in Frameworks */,
 				9AF296061BEB11560040C62A /* EventKitUI.framework in Frameworks */,
+				9A8D36A01BEB7A670052B4E9 /* GoogleMobileAds.framework in Frameworks */,
 				9AF296041BEB114E0040C62A /* EventKit.framework in Frameworks */,
 				9AF296021BEB113A0040C62A /* CoreTelephony.framework in Frameworks */,
 				9AF296001BEB11270040C62A /* CoreMedia.framework in Frameworks */,
-				9AF2960E1BEB31320040C62A /* GoogleMobileAds.framework in Frameworks */,
 				9AF295FE1BEB0E1E0040C62A /* CoreGraphics.framework in Frameworks */,
 				9AF295FC1BEB0E100040C62A /* AVFoundation.framework in Frameworks */,
 				9AF295FA1BEB0E030040C62A /* AudioToolbox.framework in Frameworks */,
@@ -179,8 +178,7 @@
 		9AA1F5A51BDD1D590031FE17 = {
 			isa = PBXGroup;
 			children = (
-				9AF2960D1BEB31320040C62A /* GoogleMobileAds.framework */,
-				9AF2960B1BEB2FD10040C62A /* GoogleMobileAds.framework */,
+				9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */,
 				9AF296091BEB11790040C62A /* SystemConfiguration.framework */,
 				9AF296071BEB11690040C62A /* StoreKit.framework */,
 				9AF296051BEB11560040C62A /* EventKitUI.framework */,

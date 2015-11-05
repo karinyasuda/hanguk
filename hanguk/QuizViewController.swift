@@ -29,6 +29,8 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
     //正解数
     var correctAnswer:Int = 0
     
+    var timer : NSTimer!
+    
     //クイズの問題を表示するlabel
     @IBOutlet var questionLabel:UILabel!
 
@@ -131,20 +133,48 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
     
     //答えのボタンを４つの中から選んだ時のアクション
     @IBAction func choiceAnswer(sender: UIButton) {
+        
         sum++
         print("random \(random)")
-        if qArray[random][5] as! Int == sender.tag {
+        
+        
+        
+        if timer.valid == true {
+            
+            //timerを破棄する.
+            timer.invalidate()}
+        
+        else if qArray[random][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
             self.plusImage.hidden = false
             self.minusImage.hidden = true
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+        
         }
         else{
-        self.plusImage.hidden = true
-        self.minusImage.hidden = false}
-
+            self.plusImage.hidden = true
+            self.minusImage.hidden = false
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+        
+        }
         //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
 
+//        if sum == questionNumber {
+//            performSegueToResult()
+//        }
+//        else {
+//            qArray.removeAtIndex(random)
+//            choiceQuiz()
+//        }
+
+    }
+    
+    
+    func hidden(){
+        self.plusImage.hidden = true
+        self.minusImage.hidden = true
+        
         if sum == questionNumber {
             performSegueToResult()
         }
@@ -153,7 +183,12 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
             choiceQuiz()
         }
 
+        
+        
     }
+    
+    
+    
     
     
     //結果画面への遷移segue
