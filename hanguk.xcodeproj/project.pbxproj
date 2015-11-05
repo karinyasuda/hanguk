@@ -40,6 +40,17 @@
 		9AE27CBB1BE8959F00960F46 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE27CA61BE8959F00960F46 /* Icon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		9AE27CBC1BE8959F00960F46 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE27CA71BE8959F00960F46 /* iTunesArtwork.png */; settings = {ASSET_TAGS = (); }; };
 		9AE27CBD1BE8959F00960F46 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE27CA81BE8959F00960F46 /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9AF295F61BEB0DDE0040C62A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF295F51BEB0DDE0040C62A /* GoogleMobileAds.framework */; };
+		9AF295F81BEB0DFA0040C62A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF295F71BEB0DFA0040C62A /* AdSupport.framework */; };
+		9AF295FA1BEB0E030040C62A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF295F91BEB0E030040C62A /* AudioToolbox.framework */; };
+		9AF295FC1BEB0E100040C62A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF295FB1BEB0E100040C62A /* AVFoundation.framework */; };
+		9AF295FE1BEB0E1E0040C62A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF295FD1BEB0E1E0040C62A /* CoreGraphics.framework */; };
+		9AF296001BEB11270040C62A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF295FF1BEB11270040C62A /* CoreMedia.framework */; };
+		9AF296021BEB113A0040C62A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296011BEB113A0040C62A /* CoreTelephony.framework */; };
+		9AF296041BEB114E0040C62A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296031BEB114E0040C62A /* EventKit.framework */; };
+		9AF296061BEB11560040C62A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296051BEB11560040C62A /* EventKitUI.framework */; };
+		9AF296081BEB11690040C62A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296071BEB11690040C62A /* StoreKit.framework */; };
+		9AF2960A1BEB11790040C62A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF296091BEB11790040C62A /* SystemConfiguration.framework */; };
 		9AFD7C901BE08D19003B575A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -100,6 +111,17 @@
 		9AE27CA61BE8959F00960F46 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9AE27CA71BE8959F00960F46 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		9AE27CA81BE8959F00960F46 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		9AF295F51BEB0DDE0040C62A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../Desktop/GoogleMobileAdsSdkiOS-7.5.2/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		9AF295F71BEB0DFA0040C62A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9AF295F91BEB0E030040C62A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9AF295FB1BEB0E100040C62A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9AF295FD1BEB0E1E0040C62A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9AF295FF1BEB11270040C62A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9AF296011BEB113A0040C62A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9AF296031BEB114E0040C62A /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		9AF296051BEB11560040C62A /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		9AF296071BEB11690040C62A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9AF296091BEB11790040C62A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +130,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF2960A1BEB11790040C62A /* SystemConfiguration.framework in Frameworks */,
+				9AF296081BEB11690040C62A /* StoreKit.framework in Frameworks */,
+				9AF296061BEB11560040C62A /* EventKitUI.framework in Frameworks */,
+				9AF296041BEB114E0040C62A /* EventKit.framework in Frameworks */,
+				9AF296021BEB113A0040C62A /* CoreTelephony.framework in Frameworks */,
+				9AF296001BEB11270040C62A /* CoreMedia.framework in Frameworks */,
+				9AF295FE1BEB0E1E0040C62A /* CoreGraphics.framework in Frameworks */,
+				9AF295FC1BEB0E100040C62A /* AVFoundation.framework in Frameworks */,
+				9AF295FA1BEB0E030040C62A /* AudioToolbox.framework in Frameworks */,
+				9AF295F81BEB0DFA0040C62A /* AdSupport.framework in Frameworks */,
+				9AF295F61BEB0DDE0040C62A /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +178,17 @@
 		9AA1F5A51BDD1D590031FE17 = {
 			isa = PBXGroup;
 			children = (
+				9AF296091BEB11790040C62A /* SystemConfiguration.framework */,
+				9AF296071BEB11690040C62A /* StoreKit.framework */,
+				9AF296051BEB11560040C62A /* EventKitUI.framework */,
+				9AF296031BEB114E0040C62A /* EventKit.framework */,
+				9AF296011BEB113A0040C62A /* CoreTelephony.framework */,
+				9AF295FF1BEB11270040C62A /* CoreMedia.framework */,
+				9AF295FD1BEB0E1E0040C62A /* CoreGraphics.framework */,
+				9AF295FB1BEB0E100040C62A /* AVFoundation.framework */,
+				9AF295F91BEB0E030040C62A /* AudioToolbox.framework */,
+				9AF295F71BEB0DFA0040C62A /* AdSupport.framework */,
+				9AF295F51BEB0DDE0040C62A /* GoogleMobileAds.framework */,
 				9AA1F5B01BDD1D590031FE17 /* hanguk */,
 				9AA1F5C51BDD1D590031FE17 /* hangukTests */,
 				9AA1F5D01BDD1D5A0031FE17 /* hangukUITests */,
@@ -167,8 +211,8 @@
 			children = (
 				9A201C461BE3CD1A0067B3D7 /* image */,
 				9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */,
-				9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */,
 				9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */,
+				9AFD7C8F1BE08D19003B575A /* ResultViewController.swift */,
 				9AA1F5B51BDD1D590031FE17 /* Main.storyboard */,
 				9AA1F5B81BDD1D590031FE17 /* Assets.xcassets */,
 				9AA1F5BA1BDD1D590031FE17 /* LaunchScreen.storyboard */,
