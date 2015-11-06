@@ -41,7 +41,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
     
     
     @IBOutlet var nextButton:UIButton!
-    
+   
     
     
     
@@ -55,6 +55,8 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
         
         self.minusImage.hidden = true
         self.plusImage.hidden = true
+        
+        nextButton.layer.cornerRadius = 10
         
 //        var qArray = [AnyObject]()
         
@@ -185,26 +187,6 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
         
         choiceQuiz()
     }
-    
-    
-
-    
-//    func hidden(){
-//        self.plusImage.hidden = true
-//        self.minusImage.hidden = true
-//        
-//        if sum == questionNumber {
-//            performSegueToResult()
-//        }
-//        else {
-//            qArray.removeAtIndex(random)
-//            choiceQuiz()
-//        }
-//    }
-
-    
-    
-    
     
     //結果画面への遷移segue
     func performSegueToResult() {
