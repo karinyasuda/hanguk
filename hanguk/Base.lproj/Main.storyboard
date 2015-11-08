@@ -229,7 +229,7 @@
                     <connections>
                         <outlet property="backButton" destination="u3E-kO-bnk" id="x8l-tb-MIL"/>
                         <outlet property="resultlabel" destination="FQu-Yy-wuM" id="W7d-DV-Fhe"/>
-                        <segue destination="Rso-gI-jfh" kind="show" id="LAG-ek-xYl"/>
+                        <segue destination="Rso-gI-jfh" kind="show" identifier="topView" id="LAG-ek-xYl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Of-XK-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
