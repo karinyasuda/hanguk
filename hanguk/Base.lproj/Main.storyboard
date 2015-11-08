@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224" y="290"/>
+            <point key="canvasLocation" x="268" y="128"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Uod-sr-2iX">
@@ -194,7 +194,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rso-gI-jfh" kind="show" id="oZX-Fs-pr2"/>
+                                    <action selector="buckButton:" destination="4Vg-PM-W5h" eventType="touchUpInside" id="uBO-kS-WCG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Yy-wuM">
@@ -227,12 +227,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="backButton" destination="u3E-kO-bnk" id="x8l-tb-MIL"/>
                         <outlet property="resultlabel" destination="FQu-Yy-wuM" id="W7d-DV-Fhe"/>
+                        <segue destination="Rso-gI-jfh" kind="show" id="LAG-ek-xYl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Of-XK-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="290"/>
+            <point key="canvasLocation" x="268" y="825"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Uyz-I5-0sU">

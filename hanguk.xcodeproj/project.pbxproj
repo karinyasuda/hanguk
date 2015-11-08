@@ -175,7 +175,7 @@
 			name = image;
 			sourceTree = "<group>";
 		};
-		9AA1F5A51BDD1D590031FE17 = {
+		9A8D36A31BEED6A20052B4E9 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */,
@@ -189,6 +189,14 @@
 				9AF295FB1BEB0E100040C62A /* AVFoundation.framework */,
 				9AF295F91BEB0E030040C62A /* AudioToolbox.framework */,
 				9AF295F71BEB0DFA0040C62A /* AdSupport.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		9AA1F5A51BDD1D590031FE17 = {
+			isa = PBXGroup;
+			children = (
+				9A8D36A31BEED6A20052B4E9 /* frameworks */,
 				9AA1F5B01BDD1D590031FE17 /* hanguk */,
 				9AA1F5C51BDD1D590031FE17 /* hangukTests */,
 				9AA1F5D01BDD1D5A0031FE17 /* hangukUITests */,

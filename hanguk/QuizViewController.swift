@@ -10,7 +10,7 @@
 import UIKit
 import GoogleMobileAds
 
-class QuizViewController: UIViewController, GADBannerViewDelegate{
+class QuizViewController: UIViewController, GADBannerViewDelegate {
 
     //出題数
     var questionNumber:Int = 10
@@ -146,7 +146,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate{
         
         sum++
         print("random \(random)")
-        
+        print(sum)
         
 //        
 //        if timer.valid == true {
