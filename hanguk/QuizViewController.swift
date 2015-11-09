@@ -98,6 +98,33 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         qArray.append(["설날","週末","祝日","正月","平日",3])
         qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1])
         
+        
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        qArray.append(["","","","","",])
+        
+        
+        
         //ここで問題を表示する！
         choiceQuiz()
         
