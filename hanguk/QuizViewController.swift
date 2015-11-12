@@ -99,29 +99,29 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1])
         
         
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
         
         
         
