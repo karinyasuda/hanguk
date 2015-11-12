@@ -12,10 +12,18 @@ import GoogleMobileAds
 
 class QuizViewController: UIViewController, GADBannerViewDelegate {
 
+    
+    
+    @IBOutlet var answerlabel:UILabel!
+
+    
+    
+    
+    
+    
+    
     //出題数
     var questionNumber:Int = 10
-    
-
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
@@ -30,6 +38,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     var correctAnswer:Int = 0
     
     var timer : NSTimer!
+    
     
     //クイズの問題を表示するlabel
     @IBOutlet var questionLabel:UILabel!
@@ -52,7 +61,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.answerlabel.hidden = true
         self.minusImage.hidden = true
         self.plusImage.hidden = true
         
@@ -150,6 +159,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         print(qArray.count)
         self.plusImage.hidden = true
         self.minusImage.hidden = true
+        self.answerlabel.hidden = true
         
         
         //クイズの問題文をシャッフルしてTextViewにセット
@@ -191,12 +201,16 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
             correctAnswer++
             self.plusImage.hidden = false
             self.minusImage.hidden = true
+            self.answerlabel.hidden = true
 //            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
         }
         else {
             self.plusImage.hidden = true
             self.minusImage.hidden = false
+            self.answerlabel.hidden = false
+//            answerlabel.text = qArray[random][0]
 //            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+            
             }
         
         //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
