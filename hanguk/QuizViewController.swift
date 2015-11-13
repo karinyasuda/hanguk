@@ -66,46 +66,47 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         self.plusImage.hidden = true
         
         nextButton.layer.cornerRadius = 10
+        answerlabel.layer.cornerRadius = 20
         
 //        var qArray = [AnyObject]()
         
         //クイズの問題　30問分の型の用意
         
-        qArray.append(["술프다","悲しい","うれしい","くやしい","疲れた",1])
-        qArray.append(["못하다","召し上がる","上手だ","下手だ","えらい",3])
-        qArray.append(["그런대","だから","それなのに","それで","そして",2])
-        qArray.append(["삼각김밥","おかず","のりべん","のりまき","おにぎり",4])
-        qArray.append(["빵","ごはん","部屋","夜","パン",4])
+        qArray.append(["술프다","悲しい","うれしい","くやしい","疲れた",1,"悲しい"])
+        qArray.append(["못하다","召し上がる","上手だ","下手だ","えらい",3,"下手だ"])
+        qArray.append(["그런대","だから","ところで","それで","そして",2,"ところで"])
+        qArray.append(["삼각김밥","おかず","のりべん","のりまき","おにぎり",4,"おにぎり"])
+        qArray.append(["빵","ごはん","部屋","夜","パン",4,"パン"])
         
-        qArray.append(["열쇠","夢","引越し","鍵","略図",3])
-        qArray.append(["노래방","住所","カラオケ","招待状","歌謡曲",2])
-        qArray.append(["좋은 꿈뀌","おやすみなさい","早く寝てください","先に寝ますね","いい夢みてね",4])
-        qArray.append(["이사하다","引越し","住所","転勤する","説明する",1])
-        qArray.append(["시험","時期","時間","試験","睡眠",3])
+        qArray.append(["열쇠","夢","引越し","鍵","略図",3,"鍵"])
+        qArray.append(["노래방","住所","カラオケ","招待状","歌謡曲",2,"カラオケ"])
+        qArray.append(["좋은 꿈뀌","おやすみなさい","早く寝てください","先に寝ますね","いい夢みてね",4,"いい夢みてね"])
+        qArray.append(["이사하다","引越し","住所","転勤する","説明する",1,"引越し"])
+        qArray.append(["시험","時期","時間","試験","睡眠",3,"試験"])
         
-        qArray.append(["술","お酒","スープ","さじ","お酢",1])
-        qArray.append(["돈","おもち","お金","木材","金属",2])
-        qArray.append(["돌아가나","招待する","歩いていく","間違える","帰る",4])
-        qArray.append(["사용","使う","あげる","ひっこし","連絡",1])
-        qArray.append(["열락","招待状","使う","連絡","出口",3])
+        qArray.append(["술","お酒","スープ","さじ","お酢",1,"お酒"])
+        qArray.append(["돈","おもち","お金","木材","金属",2,"お金"])
+        qArray.append(["돌아가나","招待する","歩いていく","間違える","帰る",4,"帰る"])
+        qArray.append(["사용","使う","あげる","ひっこし","連絡",1,"使う"])
+        qArray.append(["열락","招待状","使う","連絡","出口",3,"連絡"])
         
-        qArray.append(["설연","理解","略図","解説","説明",4])
-        qArray.append(["조금","少し","さっき","いつか","もうすぐ",1])
-        qArray.append(["다섯봉지","５袋","４まい","５本","６匹",1])
-        qArray.append(["딸","娘","息子","おば","妹",3])
-        qArray.append(["가을","秋","秋です","春","季節",1])
+        qArray.append(["설연","理解","略図","解説","説明",4,"説明"])
+        qArray.append(["조금","少し","さっき","いつか","もうすぐ",1,"少し"])
+        qArray.append(["다섯봉지","５袋","４まい","５本","６匹",1,"５袋"])
+        qArray.append(["딸","娘","息子","おば","妹",3,"おば"])
+        qArray.append(["가을","秋","秋です","春","季節",1,"秋"])
         
-        qArray.append(["방","部屋","パン","ごはん","冬",1])
-        qArray.append(["밤","パン","ごはん","息子","部屋",2])
-        qArray.append(["반찬","秋","さっき","すこし","おかず",4])
-        qArray.append(["주먹밥","巻き寿司","おにぎり","おかず","おかゆ",2])
-        qArray.append(["특히","聞き取り","悲しみ","特に","楽しい",3])
+        qArray.append(["방","部屋","パン","ごはん","冬",1,"部屋"])
+        qArray.append(["밤","パン","ごはん","息子","部屋",2,"ごはん"])
+        qArray.append(["반찬","秋","さっき","すこし","おかず",4,"おかず"])
+        qArray.append(["주먹밥","巻き寿司","おにぎり","おかず","おかゆ",2,"おにぎり"])
+        qArray.append(["특히","聞き取り","悲しみ","特に","楽しい",3,"特に"])
         
-        qArray.append(["배","船着場","雨","チケット","船",4])
-        qArray.append(["또","〜も","また","チケット","家",2])
-        qArray.append(["댁","お宅","壁","家","土",1])
-        qArray.append(["설날","週末","祝日","正月","平日",3])
-        qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1])
+        qArray.append(["배","船着場","雨","チケット","船",4,"船"])
+        qArray.append(["또","〜も","また","チケット","家",2,"また"])
+        qArray.append(["댁","お宅","壁","家","土",1,"お宅"])
+        qArray.append(["설날","週末","祝日","正月","平日",3,"正月"])
+        qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1,"外国"])
         
         
 //        qArray.append(["","","","","",])
@@ -184,16 +185,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         sum++
         print("random \(random)")
         print(sum)
-        
-//        
-//        if timer.valid == true {
-//            
-//            //timerを破棄する.
-//            timer.invalidate()}
-//        
-//        else{
-//            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden():", userInfo: nil, repeats: true)
-//        
+
         
         
         if qArray[random][5] as! Int == sender.tag {
@@ -202,15 +194,28 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
             self.plusImage.hidden = false
             self.minusImage.hidden = true
             self.answerlabel.hidden = true
-//            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+
         }
         else {
             self.plusImage.hidden = true
             self.minusImage.hidden = false
             self.answerlabel.hidden = false
-//            answerlabel.text = qArray[random][0]
-//            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "hidden:", userInfo: nil, repeats: true)
+            answerlabel.text = qArray[random][6] as! NSString as String
             
+//            let alertController = UIAlertController(title: "Hello!", message: "This is ActionSheet sample.", preferredStyle: .ActionSheet)
+//            
+//            let otherAction = UIAlertAction(title: "OK", style: .Default) {
+//                action in print("pushed OK!")
+//            }
+//            let cancelAction = UIAlertAction(title: "CANCEL", style: .Cancel) {
+//                action in print("Pushed CANCEL!")
+//            }
+            
+//            alertController.addAction(otherAction)
+////            alertController.addAction(cancelAction)
+//            presentViewController(alertController, animated: true, completion: nil)
+//            //                qArray[random][5] as! Int
+
             }
         
         //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
