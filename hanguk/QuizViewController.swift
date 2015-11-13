@@ -64,7 +64,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         self.answerlabel.hidden = true
         self.minusImage.hidden = true
         self.plusImage.hidden = true
-        
+        self.nextButton.hidden = true
         nextButton.layer.cornerRadius = 10
         answerlabel.layer.cornerRadius = 20
         
@@ -161,6 +161,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         self.plusImage.hidden = true
         self.minusImage.hidden = true
         self.answerlabel.hidden = true
+        self.nextButton.hidden = true
         
         
         //クイズの問題文をシャッフルしてTextViewにセット
@@ -194,12 +195,14 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
             self.plusImage.hidden = false
             self.minusImage.hidden = true
             self.answerlabel.hidden = true
+            self.nextButton.hidden = false
 
         }
         else {
             self.plusImage.hidden = true
             self.minusImage.hidden = false
             self.answerlabel.hidden = false
+            self.nextButton.hidden = false
             answerlabel.text = qArray[random][6] as! NSString as String
             
 //            let alertController = UIAlertController(title: "Hello!", message: "This is ActionSheet sample.", preferredStyle: .ActionSheet)
