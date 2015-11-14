@@ -67,6 +67,9 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         self.nextButton.hidden = true
         nextButton.layer.cornerRadius = 10
         answerlabel.layer.cornerRadius = 20
+        self.answerlabel.clipsToBounds = true
+
+        
         
 //        var qArray = [AnyObject]()
         
@@ -140,23 +143,22 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         
         //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
         //ここ、GOOGLE ADMOB
-        
-        let bannerView:GADBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
-        bannerView.delegate = self
-        bannerView.rootViewController = self
-        let gadRequest:GADRequest = GADRequest()
-        gadRequest.testDevices = [kGADSimulatorID] // テスト時のみ
-        bannerView.loadRequest(gadRequest)
-        self.view.addSubview(bannerView)
-        
+//        
+//        let bannerView:GADBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+//        bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
+//        bannerView.delegate = self
+//        bannerView.rootViewController = self
+//        let gadRequest:GADRequest = GADRequest()
+//        gadRequest.testDevices = [kGADSimulatorID] // テスト時のみ
+//        bannerView.loadRequest(gadRequest)
+//        self.view.addSubview(bannerView)
+//        
         
         
         
     }
 
     func choiceQuiz() {
-//        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "hidden():", userInfo: nil, repeats: true)
         print(qArray.count)
         self.plusImage.hidden = true
         self.minusImage.hidden = true
@@ -222,18 +224,16 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
             }
         
         //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
-
-        if sum == questionNumber {
-            performSegueToResult()
-        }
-//        else {
-//            qArray.removeAtIndex(random)
-//            choiceQuiz()
+//
+//        if sum == questionNumber {
+//            performSegueToResult()
 //        }
 
     }
     @IBAction func nextButton(sender:UIButton){
-        
+        if sum == questionNumber {
+            performSegueToResult()
+        }
         choiceQuiz()
     }
     
