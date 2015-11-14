@@ -143,16 +143,16 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         
         //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
         //ここ、GOOGLE ADMOB
-//        
-//        let bannerView:GADBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-//        bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
-//        bannerView.delegate = self
-//        bannerView.rootViewController = self
-//        let gadRequest:GADRequest = GADRequest()
-//        gadRequest.testDevices = [kGADSimulatorID] // テスト時のみ
-//        bannerView.loadRequest(gadRequest)
-//        self.view.addSubview(bannerView)
-//        
+        
+        let bannerView:GADBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+        let gadRequest:GADRequest = GADRequest()
+        gadRequest.testDevices = [kGADSimulatorID] // テスト時のみ
+        bannerView.loadRequest(gadRequest)
+        self.view.addSubview(bannerView)
+        
         
         
         
