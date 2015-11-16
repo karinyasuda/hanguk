@@ -350,7 +350,7 @@
 		9AA1F5A61BDD1D590031FE17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Karin;
 				TargetAttributes = {
 					9AA1F5AD1BDD1D590031FE17 = {
@@ -543,7 +543,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos9.2;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -582,7 +582,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "201992fa-47ce-4377-b99f-253dadb7581f";
-				SDKROOT = iphoneos9.2;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -687,7 +687,7 @@
 				9AA1F5D51BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5D61BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hanguk" */ = {
 			isa = XCConfigurationList;
@@ -696,7 +696,7 @@
 				9AA1F5D81BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5D91BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hangukTests" */ = {
 			isa = XCConfigurationList;
@@ -705,7 +705,7 @@
 				9AA1F5DB1BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5DC1BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hangukUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,7 +714,7 @@
 				9AA1F5DE1BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
