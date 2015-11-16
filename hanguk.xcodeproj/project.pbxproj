@@ -687,7 +687,7 @@
 				9AA1F5D51BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9AA1F5D61BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hanguk" */ = {
 			isa = XCConfigurationList;
@@ -696,7 +696,7 @@
 				9AA1F5D81BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9AA1F5D91BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hangukTests" */ = {
 			isa = XCConfigurationList;
@@ -705,7 +705,7 @@
 				9AA1F5DB1BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9AA1F5DC1BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hangukUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,7 +714,7 @@
 				9AA1F5DE1BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
