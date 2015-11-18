@@ -21,8 +21,10 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
+  //-------------------------------------
+    //qArrayを入れる配列
     var quizArray = [AnyObject]()
-    
+  //------------------------------------
     //現在の問題数
     var sum:Int = 0
     
@@ -62,7 +64,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
 
         
         
-//        var qArray = [AnyObject]()
+        var qArray = [AnyObject]()
         
         //クイズの問題　30問分の型の用意
         
@@ -132,18 +134,27 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         //ここで問題を表示する！
         
         
-        srand(UInt32(time(nil)))
-        while(qArray.count > 0){
-            let index = Int (rand()) % qArray.count
-            quizArray.append(qArray[index])
-            qArray.removeAtIndex(index)
-            
-            
-            questionLabel.text = quizArray[0][0] as! NSString as String
-        }
         
+        
+//        //-------------------------------------------------------------
+//        srand(UInt32(time(nil)))
+//        while(qArray.count > 0){
+//            let random = Int (rand()) % qArray.count
+//            
+//            quizArray.append(qArray[random])
+//            qArray.removeAtIndex(random)
+//            
+        
+//            questionLabel.text = quizArray[0][0] as! NSString as String
+        
+        //---------------------------------------------------------------
+            
+            
+            
+            
+            
         choiceQuiz()
-        
+//        }
         //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
         //ここ、GOOGLE ADMOB
         
@@ -170,16 +181,10 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         
         
         
-        
-        
-        
-        
-        
-//        
 //        //クイズの問題文をシャッフルしてTextViewにセット
 //        random = Int(arc4random_uniform(UInt32(qArray.count)))
 //        
-//        questionLabel.text = qArray[random][0] as! NSString as String
+        questionLabel.text = quizArray[random][0] as! NSString as String
 
         
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
@@ -200,7 +205,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         print(sum)
 
         
-        if quizArray[0][5] as! Int == sender.tag {
+        if quizArray[random][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
             self.plusImage.hidden = false
