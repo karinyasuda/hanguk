@@ -13,20 +13,15 @@ import GoogleMobileAds
 class QuizViewController: UIViewController, GADBannerViewDelegate {
 
     
-    
+    //正しい正解の問題を教えてくれるラベル　間違った時のみ表示される
     @IBOutlet var answerlabel:UILabel!
-
-    
-    
-    
-    
-    
     
     //出題数
     var questionNumber:Int = 10
     
     //クイズの問題を入れる配列
     var qArray  = [AnyObject]()
+    var quizArray = [AnyObject]()
     
     //現在の問題数
     var sum:Int = 0
@@ -37,8 +32,8 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     //正解数
     var correctAnswer:Int = 0
     
-    var timer : NSTimer!
-    
+    //timer だけどたぶんいま使ってない
+//    var timer : NSTimer!
     
     //クイズの問題を表示するlabel
     @IBOutlet var questionLabel:UILabel!
@@ -48,19 +43,15 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     @IBOutlet var minusImage:UIImageView!
     
     
-    
+    //問題をついのものに切り替えるボタン
     @IBOutlet var nextButton:UIButton!
    
-    
-    
-    
-    @IBOutlet var choiceButtons: Array<UIButton>!
     //選択肢のボタン
-    
-
+    @IBOutlet var choiceButtons: Array<UIButton>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.answerlabel.hidden = true
         self.minusImage.hidden = true
         self.plusImage.hidden = true
@@ -111,34 +102,46 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         qArray.append(["설날","週末","祝日","正月","平日",3,"正月"])
         qArray.append(["외국","外国","イギリス","アメリカ","オランダ",1,"外国"])
         
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        qArray.append(["","","","","",])
-        
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        qArray.append(["","","","","",])
+//        
         
         
         //ここで問題を表示する！
+        
+        
+        srand(UInt32(time(nil)))
+        while(qArray.count > 0){
+            let index = Int (rand()) % qArray.count
+            quizArray.append(qArray[index])
+            qArray.removeAtIndex(index)
+            
+            
+            questionLabel.text = quizArray[0][0] as! NSString as String
+        }
+        
         choiceQuiz()
         
         //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
@@ -159,22 +162,29 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     }
 
     func choiceQuiz() {
-        print(qArray.count)
+        print(quizArray.count)
         self.plusImage.hidden = true
         self.minusImage.hidden = true
         self.answerlabel.hidden = true
         self.nextButton.hidden = true
         
         
-        //クイズの問題文をシャッフルしてTextViewにセット
-        random = Int(arc4random_uniform(UInt32(qArray.count)))
         
-        questionLabel.text = qArray[random][0] as! NSString as String
+        
+        
+        
+        
+        
+//        
+//        //クイズの問題文をシャッフルしてTextViewにセット
+//        random = Int(arc4random_uniform(UInt32(qArray.count)))
+//        
+//        questionLabel.text = qArray[random][0] as! NSString as String
 
         
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
         for var i = 0; i < choiceButtons.count; i++ {
-            choiceButtons[i].setTitle((qArray[random][i+1] as! NSString) as NSString as String, forState: .Normal)
+            choiceButtons[i].setTitle((quizArray[random][i+1] as! NSString) as String, forState: .Normal)
             
             //どのボタンが押されたか判別するためのtagをセット
             choiceButtons[i].tag = i + 1;
@@ -190,44 +200,29 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         print(sum)
 
         
-        
-        if qArray[random][5] as! Int == sender.tag {
+        if quizArray[0][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
             self.plusImage.hidden = false
             self.minusImage.hidden = true
             self.answerlabel.hidden = true
             self.nextButton.hidden = false
-
+            
         }
         else {
             self.plusImage.hidden = true
             self.minusImage.hidden = false
             self.answerlabel.hidden = false
             self.nextButton.hidden = false
-            answerlabel.text = qArray[random][6] as! NSString as String
-            
-//            let alertController = UIAlertController(title: "Hello!", message: "This is ActionSheet sample.", preferredStyle: .ActionSheet)
-//            
-//            let otherAction = UIAlertAction(title: "OK", style: .Default) {
-//                action in print("pushed OK!")
-//            }
-//            let cancelAction = UIAlertAction(title: "CANCEL", style: .Cancel) {
-//                action in print("Pushed CANCEL!")
-//            }
-            
-//            alertController.addAction(otherAction)
-////            alertController.addAction(cancelAction)
-//            presentViewController(alertController, animated: true, completion: nil)
-//            //                qArray[random][5] as! Int
+            answerlabel.text = quizArray[random][6] as! NSString as String
 
-            }
-        
-        //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
+            
+            //解いた問題数の合計（sum）が予め設定していた問題数に達したら結果画面へ
 //
 //        if sum == questionNumber {
 //            performSegueToResult()
-//        }
+        }
+        
 
     }
     @IBAction func nextButton(sender:UIButton){
