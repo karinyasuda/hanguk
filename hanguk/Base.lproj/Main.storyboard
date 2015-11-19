@@ -47,7 +47,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWX-2t-wGC"/>
+                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ija-XU-88n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnW-pe-S7c">
@@ -61,7 +61,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqz-Km-8a3"/>
+                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2a-3l-psW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0N-91-IOl">
@@ -75,7 +75,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSm-Cp-8NQ"/>
+                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pz-yo-RRG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uu-Gx-Sfk">
@@ -89,7 +89,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaC-wD-iNr"/>
+                                    <action selector="choiceAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yK6-9r-BKu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLV-ki-r6O">
@@ -103,7 +103,7 @@
                                     <color key="titleColor" red="0.026587354109999999" green="0.01403004228" blue="0.065111243210000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSb-wJ-JqS"/>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLG-M6-mkD"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="maru.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-mx-1ZI">
@@ -158,15 +158,15 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="answerlabel" destination="DOu-2z-ZPW" id="tX0-iH-gJU"/>
-                        <outlet property="minusImage" destination="gUK-KR-OB0" id="PwT-sF-EeE"/>
-                        <outlet property="nextButton" destination="KLV-ki-r6O" id="O1S-dS-ASO"/>
-                        <outlet property="plusImage" destination="tYL-mx-1ZI" id="hJI-hY-HG0"/>
-                        <outlet property="questionLabel" destination="VTP-xq-Mrl" id="4De-4l-HCe"/>
-                        <outletCollection property="choiceButtons" destination="ujW-Pe-uff" collectionClass="NSMutableArray" id="J59-3H-sk6"/>
-                        <outletCollection property="choiceButtons" destination="MnW-pe-S7c" collectionClass="NSMutableArray" id="7xd-SZ-LVx"/>
-                        <outletCollection property="choiceButtons" destination="a0N-91-IOl" collectionClass="NSMutableArray" id="E6I-RM-Lcd"/>
-                        <outletCollection property="choiceButtons" destination="8uu-Gx-Sfk" collectionClass="NSMutableArray" id="FX8-yV-Urv"/>
+                        <outlet property="answerlabel" destination="DOu-2z-ZPW" id="Bue-Hf-rfh"/>
+                        <outlet property="minusImage" destination="tYL-mx-1ZI" id="2YO-7E-PdA"/>
+                        <outlet property="nextButton" destination="KLV-ki-r6O" id="iL4-4e-aeV"/>
+                        <outlet property="plusImage" destination="gUK-KR-OB0" id="0IO-zo-0zO"/>
+                        <outlet property="questionLabel" destination="VTP-xq-Mrl" id="h5n-JU-0E8"/>
+                        <outletCollection property="choiceButtons" destination="ujW-Pe-uff" collectionClass="NSMutableArray" id="j22-gr-Aki"/>
+                        <outletCollection property="choiceButtons" destination="MnW-pe-S7c" collectionClass="NSMutableArray" id="RjJ-uz-Yct"/>
+                        <outletCollection property="choiceButtons" destination="a0N-91-IOl" collectionClass="NSMutableArray" id="A7r-0Z-dM8"/>
+                        <outletCollection property="choiceButtons" destination="8uu-Gx-Sfk" collectionClass="NSMutableArray" id="rhn-sR-8eB"/>
                         <segue destination="4Vg-PM-W5h" kind="show" identifier="ResultView" id="wUA-XP-Hbf"/>
                     </connections>
                 </viewController>
@@ -308,7 +308,7 @@
                                     <color key="titleColor" red="0.026587354109999999" green="0.01403004228" blue="0.065111243210000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ntf-Hr-1LT"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="QuestionView" id="1ge-hS-sTA"/>
                                 </connections>
                             </button>
                         </subviews>
