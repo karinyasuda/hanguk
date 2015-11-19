@@ -204,7 +204,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         print("random \(random)")
         print(sum)
 
-        
+        //この書き方のas!とか[randim][5]とかわからん
         if qArray[random][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
@@ -251,8 +251,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         
         if (segue.identifier == "ResultView") {
             let ResultView : ResultViewController = segue.destinationViewController as! ResultViewController
-
-
+            //ResultViewのcorrectAnswerに正解数を格納
             ResultView.correctAnswer = self.correctAnswer
         }
     }
