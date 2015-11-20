@@ -212,7 +212,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
             self.minusImage.hidden = true
             self.answerlabel.hidden = true
             self.nextButton.hidden = false
-//            
+//          sumが10って宣言してある　questionNumber と等しくなったら　画面遷移　segue呼びだし
             if sum == questionNumber {
                 performSegueToResult()}
             
