@@ -1,4 +1,21 @@
 # hanguk
+
+
+2015/10/24
+バナーのサイズに関しての表を追加しておく。
+いま使っているのは
+320x50		標準のバナー             携帯電話とタブレット      kGADAdSizeBanner
+320x100		バナー大                携帯電話とタブレット      kGADAdSizeLargeBanner
+300x250		IAB レクタングル（中）    携帯電話とタブレット      kGADAdSizeMediumRectangle
+468x60		IAB フルサイズ バナー     タブレット              kGADAdSizeFullBanner
+728x90		IAB ビッグバナー         タブレット              kGADAdSizeLeaderboard
+表を参照		スマート バナー          携帯電話とタブレット      kGADAdSizeSmartBannerPortrait
+                                                         kGADAdSizeSmartBannerLandscape
+
+
+今回使っているのは　　kGADAdSizeSmartBannerPortrait　
+
+
 ld: 'ライブラリ名' does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), 
 obtain an updated library from the vendor, or disable bitcode for this target. for architecture arm64
 と、Bitcodeにエラーが出た。　Xcode7.2では　Unable Bitcode　= Yes　に勝手に設定されちゃう。
@@ -10,8 +27,7 @@ sdkで指定されているのは9.2だけど最大値9.1を超えていると�
 どこで直せばいいのかわからず、解決できていない。
 
 他に、ビルドの提出はβ版でしちゃあかんと言われたのでβ版を消してちゃんとした最新版9.1対応をダウンロードする。
-
-
+なお、今回は、ipadに対応していなかったことからrejectされた。
 
 ==============================================================================================================
 以下、reject内容全文　from Apple　+スクリーンショットの写真が一枚ついてた。
