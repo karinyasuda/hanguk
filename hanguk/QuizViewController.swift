@@ -13,7 +13,7 @@ import GoogleMobileAds
 class QuizViewController: UIViewController, GADBannerViewDelegate {
 
     
-    @IBOutlet weak var GAdbanner: GADBannerView!
+//    @IBOutlet weak var GAdbanner: GADBannerView!
     //正しい正解の問題を教えてくれるラベル　間違った時のみ表示される
     @IBOutlet var answerlabel:UILabel!
     
