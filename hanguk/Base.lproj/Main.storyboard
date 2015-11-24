@@ -28,7 +28,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ipo-7E-mpb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="단어" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-xq-Mrl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="단어" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-xq-Mrl">
                                 <rect key="frame" x="27" y="93" width="266" height="89"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,6 +130,7 @@
                             <constraint firstItem="Ipo-7E-mpb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3li-zn-vFa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a0N-91-IOl" secondAttribute="trailing" constant="45" id="4ns-ON-AIy"/>
                             <constraint firstAttribute="trailing" secondItem="mTr-vv-Bem" secondAttribute="trailing" id="6Bt-Fo-Ypn"/>
+                            <constraint firstItem="VTP-xq-Mrl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="6HS-E7-frD"/>
                             <constraint firstItem="8uu-Gx-Sfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="7oR-Dq-YMa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KLV-ki-r6O" secondAttribute="trailing" constant="30" id="BhW-XJ-dqU"/>
                             <constraint firstItem="tYL-mx-1ZI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="BkN-dl-scY"/>
