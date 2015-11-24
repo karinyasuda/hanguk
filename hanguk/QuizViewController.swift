@@ -13,6 +13,7 @@ import GoogleMobileAds
 class QuizViewController: UIViewController, GADBannerViewDelegate {
 
     
+    @IBOutlet weak var GAdbanner: GADBannerView!
     //正しい正解の問題を教えてくれるラベル　間違った時のみ表示される
     @IBOutlet var answerlabel:UILabel!
     
@@ -37,6 +38,9 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     //timer だけどたぶんいま使ってない
 //    var timer : NSTimer!
     
+    
+    var contentRect = CGRectZero
+    
     //クイズの問題を表示するlabel
     @IBOutlet var questionLabel:UILabel!
 
@@ -54,7 +58,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.answerlabel.hidden = true
+        self.answerlabel.hidden =                       true
         self.minusImage.hidden = true
         self.plusImage.hidden = true
         self.nextButton.hidden = true
@@ -158,9 +162,10 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
         //ここ、GOOGLE ADMOB
         
-        let bannerView:GADBannerView = GADBannerView()
-//        (adSize: kGADAdSizeSmartBannerPortrait)
-        //広告UnitIDを指定する
+        let bannerView:GADBannerView = GADBannerView (adSize: kGADAdSizeBanner)
+       bannerView.frame.origin.y = contentRect.height
+        //広告UnitIDを指定するw
+        print("Google Mobile Ads SDK version:\(GADRequest.sdkVersion())")
         bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
         bannerView.delegate = self
         bannerView.rootViewController = self
