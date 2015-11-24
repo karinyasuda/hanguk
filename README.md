@@ -3,7 +3,9 @@
 
 2015/10/24
 バナーのサイズに関しての表を追加しておく。
-いま使っているのは
+
+
+
 320x50		標準のバナー             携帯電話とタブレット      kGADAdSizeBanner
 320x100		バナー大                携帯電話とタブレット      kGADAdSizeLargeBanner
 300x250		IAB レクタングル（中）    携帯電話とタブレット      kGADAdSizeMediumRectangle
