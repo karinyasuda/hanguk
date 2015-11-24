@@ -106,7 +106,7 @@
                                     <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLG-M6-mkD"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="maru.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-mx-1ZI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="batsu.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-mx-1ZI">
                                 <rect key="frame" x="80" y="313" width="160" height="160"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ほげほげ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOu-2z-ZPW">
@@ -121,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="3" height="-1"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="batsu.png" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-KR-OB0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="maru.png" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-KR-OB0">
                                 <rect key="frame" x="70" y="303" width="180" height="180"/>
                             </imageView>
                         </subviews>

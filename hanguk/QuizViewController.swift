@@ -214,22 +214,29 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
 
         //この書き方のas!とか[randim][5]とかわからん
         if qArray[random][5] as! Int == sender.tag {
-            //正解数を増やす
+            //あってたら
+            //→正解数を増やす
             correctAnswer++
+            
             self.plusImage.hidden = false
-            self.minusImage.hidden = true
-            self.answerlabel.hidden = true
+              self.minusImage.hidden = true
+              self.answerlabel.hidden = true
             self.nextButton.hidden = false
+            //正しい答えと×が消える
+            //○と次のViewに移るボタンが表示される
 //          sumが10って宣言してある　questionNumber と等しくなったら　画面遷移　segue呼びだし
             if sum == questionNumber {
                 performSegueToResult()}
             
         }
+            //間違ってたら
         else {
-            self.plusImage.hidden = true
+              self.plusImage.hidden = true
             self.minusImage.hidden = false
             self.answerlabel.hidden = false
             self.nextButton.hidden = false
+            //○が表示される
+            //正しい答えと×と次のViewに移るボタンが表示される
             answerlabel.text = qArray[random][6] as! NSString as String
 
             
