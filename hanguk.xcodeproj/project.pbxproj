@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		9A201C441BE3CD110067B3D7 /* false.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A201C421BE3CD110067B3D7 /* false.png */; };
 		9A201C451BE3CD110067B3D7 /* true.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A201C431BE3CD110067B3D7 /* true.png */; };
+		9A71C31D1C04456B00604826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C31C1C04456B00604826 /* AppDelegate.swift */; };
+		9A71C31F1C04456B00604826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C31E1C04456B00604826 /* ViewController.swift */; };
+		9A71C3221C04456B00604826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A71C3201C04456B00604826 /* Main.storyboard */; };
+		9A71C3241C04456B00604826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A71C3231C04456B00604826 /* Assets.xcassets */; };
+		9A71C3271C04456B00604826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A71C3251C04456B00604826 /* LaunchScreen.storyboard */; };
+		9A71C3321C04456B00604826 /* hanguk_ipadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C3311C04456B00604826 /* hanguk_ipadTests.swift */; };
+		9A71C33D1C04456B00604826 /* hanguk_ipadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C33C1C04456B00604826 /* hanguk_ipadUITests.swift */; };
 		9A8D36A01BEB7A670052B4E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */; };
 		9AA1F5B21BDD1D590031FE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */; };
 		9AA1F5B41BDD1D590031FE17 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B31BDD1D590031FE17 /* QuizViewController.swift */; };
@@ -57,6 +64,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9A71C32E1C04456B00604826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA1F5A61BDD1D590031FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A71C3191C04456B00604826;
+			remoteInfo = hanguk.ipad;
+		};
+		9A71C3391C04456B00604826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA1F5A61BDD1D590031FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A71C3191C04456B00604826;
+			remoteInfo = hanguk.ipad;
+		};
 		9AA1F5C31BDD1D590031FE17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AA1F5A61BDD1D590031FE17 /* Project object */;
@@ -76,6 +97,19 @@
 /* Begin PBXFileReference section */
 		9A201C421BE3CD110067B3D7 /* false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = false.png; sourceTree = "<group>"; };
 		9A201C431BE3CD110067B3D7 /* true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true.png; sourceTree = "<group>"; };
+		9A71C31A1C04456B00604826 /* hanguk.ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanguk.ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A71C31C1C04456B00604826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A71C31E1C04456B00604826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A71C3211C04456B00604826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A71C3231C04456B00604826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A71C3261C04456B00604826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A71C3281C04456B00604826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A71C32D1C04456B00604826 /* hanguk.ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanguk.ipadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A71C3311C04456B00604826 /* hanguk_ipadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hanguk_ipadTests.swift; sourceTree = "<group>"; };
+		9A71C3331C04456B00604826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A71C3381C04456B00604826 /* hanguk.ipadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanguk.ipadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A71C33C1C04456B00604826 /* hanguk_ipadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hanguk_ipadUITests.swift; sourceTree = "<group>"; };
+		9A71C33E1C04456B00604826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9AA1F5AE1BDD1D590031FE17 /* hanguk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanguk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA1F5B11BDD1D590031FE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +164,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A71C3171C04456B00604826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71C32A1C04456B00604826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71C3351C04456B00604826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AA1F5AB1BDD1D590031FE17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +236,37 @@
 			name = image;
 			sourceTree = "<group>";
 		};
+		9A71C31B1C04456B00604826 /* hanguk.ipad */ = {
+			isa = PBXGroup;
+			children = (
+				9A71C31C1C04456B00604826 /* AppDelegate.swift */,
+				9A71C31E1C04456B00604826 /* ViewController.swift */,
+				9A71C3201C04456B00604826 /* Main.storyboard */,
+				9A71C3231C04456B00604826 /* Assets.xcassets */,
+				9A71C3251C04456B00604826 /* LaunchScreen.storyboard */,
+				9A71C3281C04456B00604826 /* Info.plist */,
+			);
+			path = hanguk.ipad;
+			sourceTree = "<group>";
+		};
+		9A71C3301C04456B00604826 /* hanguk.ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A71C3311C04456B00604826 /* hanguk_ipadTests.swift */,
+				9A71C3331C04456B00604826 /* Info.plist */,
+			);
+			path = hanguk.ipadTests;
+			sourceTree = "<group>";
+		};
+		9A71C33B1C04456B00604826 /* hanguk.ipadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A71C33C1C04456B00604826 /* hanguk_ipadUITests.swift */,
+				9A71C33E1C04456B00604826 /* Info.plist */,
+			);
+			path = hanguk.ipadUITests;
+			sourceTree = "<group>";
+		};
 		9A8D36A31BEED6A20052B4E9 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +292,9 @@
 				9AA1F5B01BDD1D590031FE17 /* hanguk */,
 				9AA1F5C51BDD1D590031FE17 /* hangukTests */,
 				9AA1F5D01BDD1D5A0031FE17 /* hangukUITests */,
+				9A71C31B1C04456B00604826 /* hanguk.ipad */,
+				9A71C3301C04456B00604826 /* hanguk.ipadTests */,
+				9A71C33B1C04456B00604826 /* hanguk.ipadUITests */,
 				9AA1F5AF1BDD1D590031FE17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -216,6 +305,9 @@
 				9AA1F5AE1BDD1D590031FE17 /* hanguk.app */,
 				9AA1F5C21BDD1D590031FE17 /* hangukTests.xctest */,
 				9AA1F5CD1BDD1D5A0031FE17 /* hangukUITests.xctest */,
+				9A71C31A1C04456B00604826 /* hanguk.ipad.app */,
+				9A71C32D1C04456B00604826 /* hanguk.ipadTests.xctest */,
+				9A71C3381C04456B00604826 /* hanguk.ipadUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,6 +383,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9A71C3191C04456B00604826 /* hanguk.ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A71C33F1C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipad" */;
+			buildPhases = (
+				9A71C3161C04456B00604826 /* Sources */,
+				9A71C3171C04456B00604826 /* Frameworks */,
+				9A71C3181C04456B00604826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hanguk.ipad;
+			productName = hanguk.ipad;
+			productReference = 9A71C31A1C04456B00604826 /* hanguk.ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A71C32C1C04456B00604826 /* hanguk.ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A71C3421C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipadTests" */;
+			buildPhases = (
+				9A71C3291C04456B00604826 /* Sources */,
+				9A71C32A1C04456B00604826 /* Frameworks */,
+				9A71C32B1C04456B00604826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A71C32F1C04456B00604826 /* PBXTargetDependency */,
+			);
+			name = hanguk.ipadTests;
+			productName = hanguk.ipadTests;
+			productReference = 9A71C32D1C04456B00604826 /* hanguk.ipadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A71C3371C04456B00604826 /* hanguk.ipadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A71C3451C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipadUITests" */;
+			buildPhases = (
+				9A71C3341C04456B00604826 /* Sources */,
+				9A71C3351C04456B00604826 /* Frameworks */,
+				9A71C3361C04456B00604826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A71C33A1C04456B00604826 /* PBXTargetDependency */,
+			);
+			name = hanguk.ipadUITests;
+			productName = hanguk.ipadUITests;
+			productReference = 9A71C3381C04456B00604826 /* hanguk.ipadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9AA1F5AD1BDD1D590031FE17 /* hanguk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AA1F5D61BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hanguk" */;
@@ -350,9 +495,21 @@
 		9AA1F5A61BDD1D590031FE17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Karin;
 				TargetAttributes = {
+					9A71C3191C04456B00604826 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					9A71C32C1C04456B00604826 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 9A71C3191C04456B00604826;
+					};
+					9A71C3371C04456B00604826 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 9A71C3191C04456B00604826;
+					};
 					9AA1F5AD1BDD1D590031FE17 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 4NN44SZ65T;
@@ -383,11 +540,38 @@
 				9AA1F5AD1BDD1D590031FE17 /* hanguk */,
 				9AA1F5C11BDD1D590031FE17 /* hangukTests */,
 				9AA1F5CC1BDD1D5A0031FE17 /* hangukUITests */,
+				9A71C3191C04456B00604826 /* hanguk.ipad */,
+				9A71C32C1C04456B00604826 /* hanguk.ipadTests */,
+				9A71C3371C04456B00604826 /* hanguk.ipadUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9A71C3181C04456B00604826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A71C3271C04456B00604826 /* LaunchScreen.storyboard in Resources */,
+				9A71C3241C04456B00604826 /* Assets.xcassets in Resources */,
+				9A71C3221C04456B00604826 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71C32B1C04456B00604826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71C3361C04456B00604826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AA1F5AC1BDD1D590031FE17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,6 +627,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9A71C3161C04456B00604826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A71C31F1C04456B00604826 /* ViewController.swift in Sources */,
+				9A71C31D1C04456B00604826 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71C3291C04456B00604826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A71C3321C04456B00604826 /* hanguk_ipadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71C3341C04456B00604826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A71C33D1C04456B00604826 /* hanguk_ipadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AA1F5AA1BDD1D590031FE17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +681,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9A71C32F1C04456B00604826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A71C3191C04456B00604826 /* hanguk.ipad */;
+			targetProxy = 9A71C32E1C04456B00604826 /* PBXContainerItemProxy */;
+		};
+		9A71C33A1C04456B00604826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A71C3191C04456B00604826 /* hanguk.ipad */;
+			targetProxy = 9A71C3391C04456B00604826 /* PBXContainerItemProxy */;
+		};
 		9AA1F5C41BDD1D590031FE17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9AA1F5AD1BDD1D590031FE17 /* hanguk */;
@@ -485,6 +704,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9A71C3201C04456B00604826 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A71C3211C04456B00604826 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A71C3251C04456B00604826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A71C3261C04456B00604826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		9AA1F5B51BDD1D590031FE17 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -504,6 +739,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9A71C3401C04456B00604826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hanguk.ipad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9A71C3411C04456B00604826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hanguk.ipad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		9A71C3431C04456B00604826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hanguk.ipadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hanguk.ipad.app/hanguk.ipad";
+			};
+			name = Debug;
+		};
+		9A71C3441C04456B00604826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hanguk.ipadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hanguk.ipad.app/hanguk.ipad";
+			};
+			name = Release;
+		};
+		9A71C3461C04456B00604826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hanguk.ipadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hanguk.ipad;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9A71C3471C04456B00604826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hanguk.ipadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hanguk.ipad;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		9AA1F5D41BDD1D5A0031FE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,7 +911,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karin.hanguk00;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "71bc0f3e-1212-43fd-8508-9aed8e10516d";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -625,7 +932,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karin.hanguk00;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "71bc0f3e-1212-43fd-8508-9aed8e10516d";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -680,6 +987,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9A71C33F1C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A71C3401C04456B00604826 /* Debug */,
+				9A71C3411C04456B00604826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A71C3421C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A71C3431C04456B00604826 /* Debug */,
+				9A71C3441C04456B00604826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A71C3451C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A71C3461C04456B00604826 /* Debug */,
+				9A71C3471C04456B00604826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9AA1F5A91BDD1D590031FE17 /* Build configuration list for PBXProject "hanguk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

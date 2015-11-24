@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>hanguk.ipad.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>hanguk.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9A71C3191C04456B00604826</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A71C32C1C04456B00604826</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A71C3371C04456B00604826</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9AA1F5AD1BDD1D590031FE17</key>
 		<dict>
 			<key>primary</key>
