@@ -38,7 +38,7 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
     //timer だけどたぶんいま使ってない
 //    var timer : NSTimer!
     
-    
+    var viewFrame = CGRectZero
     var contentRect = CGRectZero
     
     //クイズの問題を表示するlabel
@@ -161,9 +161,11 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
 //        }
         //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
         //ここ、GOOGLE ADMOB
-        
-        let bannerView:GADBannerView = GADBannerView (adSize: kGADAdSizeBanner)
-       bannerView.frame.origin.y = contentRect.height
+      
+        (frame: CGRectZero)
+        let bannerView:GADBannerView = GADBannerView (adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.frame.origin.y = contentRect.height
+//        bannerView.frame.size.width = contentRect.width
         //広告UnitIDを指定するw
         print("Google Mobile Ads SDK version:\(GADRequest.sdkVersion())")
         bannerView.adUnitID = "ca-app-pub-3198611449404323/4707284097"
@@ -173,7 +175,6 @@ class QuizViewController: UIViewController, GADBannerViewDelegate {
         gadRequest.testDevices = [kGADSimulatorID] // テスト時のみ
         bannerView.loadRequest(gadRequest)
         self.view.addSubview(bannerView)
-        
         
         
         

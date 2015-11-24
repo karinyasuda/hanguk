@@ -78,6 +78,13 @@
 			remoteGlobalIDString = 9A71C3191C04456B00604826;
 			remoteInfo = hanguk.ipad;
 		};
+		9A71C34A1C044BCB00604826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA1F5A61BDD1D590031FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA1F5AD1BDD1D590031FE17;
+			remoteInfo = hanguk;
+		};
 		9AA1F5C31BDD1D590031FE17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AA1F5A61BDD1D590031FE17 /* Project object */;
@@ -430,6 +437,7 @@
 			);
 			dependencies = (
 				9A71C33A1C04456B00604826 /* PBXTargetDependency */,
+				9A71C34B1C044BCB00604826 /* PBXTargetDependency */,
 			);
 			name = hanguk.ipadUITests;
 			productName = hanguk.ipadUITests;
@@ -508,7 +516,7 @@
 					};
 					9A71C3371C04456B00604826 = {
 						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 9A71C3191C04456B00604826;
+						TestTargetID = 9AA1F5AD1BDD1D590031FE17;
 					};
 					9AA1F5AD1BDD1D590031FE17 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -691,6 +699,11 @@
 			target = 9A71C3191C04456B00604826 /* hanguk.ipad */;
 			targetProxy = 9A71C3391C04456B00604826 /* PBXContainerItemProxy */;
 		};
+		9A71C34B1C044BCB00604826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA1F5AD1BDD1D590031FE17 /* hanguk */;
+			targetProxy = 9A71C34A1C044BCB00604826 /* PBXContainerItemProxy */;
+		};
 		9AA1F5C41BDD1D590031FE17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9AA1F5AD1BDD1D590031FE17 /* hanguk */;
@@ -794,7 +807,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipadUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = hanguk.ipad;
+				PROVISIONING_PROFILE = "71bc0f3e-1212-43fd-8508-9aed8e10516d";
+				TEST_TARGET_NAME = hanguk;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -806,7 +820,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Karin.hanguk-ipadUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = hanguk.ipad;
+				PROVISIONING_PROFILE = "71bc0f3e-1212-43fd-8508-9aed8e10516d";
+				TEST_TARGET_NAME = hanguk;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
