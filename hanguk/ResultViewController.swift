@@ -30,6 +30,7 @@ class ResultViewController: UIViewController {
 
         resultlabel.text = "\(correctAnswer)"
 
+    
         
     }
     
