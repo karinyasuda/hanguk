@@ -9,13 +9,6 @@
 /* Begin PBXBuildFile section */
 		9A201C441BE3CD110067B3D7 /* false.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A201C421BE3CD110067B3D7 /* false.png */; };
 		9A201C451BE3CD110067B3D7 /* true.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A201C431BE3CD110067B3D7 /* true.png */; };
-		9A71C31D1C04456B00604826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C31C1C04456B00604826 /* AppDelegate.swift */; };
-		9A71C31F1C04456B00604826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C31E1C04456B00604826 /* ViewController.swift */; };
-		9A71C3221C04456B00604826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A71C3201C04456B00604826 /* Main.storyboard */; };
-		9A71C3241C04456B00604826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A71C3231C04456B00604826 /* Assets.xcassets */; };
-		9A71C3271C04456B00604826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A71C3251C04456B00604826 /* LaunchScreen.storyboard */; };
-		9A71C3321C04456B00604826 /* hanguk_ipadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C3311C04456B00604826 /* hanguk_ipadTests.swift */; };
-		9A71C33D1C04456B00604826 /* hanguk_ipadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71C33C1C04456B00604826 /* hanguk_ipadUITests.swift */; };
 		9A71C34C1C06D5DE00604826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1F5B81BDD1D590031FE17 /* Assets.xcassets */; };
 		9A8D36A01BEB7A670052B4E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */; };
 		9A9BD3E61C17092700B63C12 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD3D31C17092700B63C12 /* Icon-40.png */; };
@@ -104,18 +97,8 @@
 		9A201C421BE3CD110067B3D7 /* false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = false.png; sourceTree = "<group>"; };
 		9A201C431BE3CD110067B3D7 /* true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true.png; sourceTree = "<group>"; };
 		9A71C31A1C04456B00604826 /* hanguk.ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanguk.ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A71C31C1C04456B00604826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A71C31E1C04456B00604826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A71C3211C04456B00604826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A71C3231C04456B00604826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9A71C3261C04456B00604826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9A71C3281C04456B00604826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A71C32D1C04456B00604826 /* hanguk.ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanguk.ipadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A71C3311C04456B00604826 /* hanguk_ipadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hanguk_ipadTests.swift; sourceTree = "<group>"; };
-		9A71C3331C04456B00604826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A71C3381C04456B00604826 /* hanguk.ipadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanguk.ipadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A71C33C1C04456B00604826 /* hanguk_ipadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hanguk_ipadUITests.swift; sourceTree = "<group>"; };
-		9A71C33E1C04456B00604826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8D369F1BEB7A670052B4E9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9A9BD3D31C17092700B63C12 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		9A9BD3D41C17092700B63C12 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
@@ -241,37 +224,6 @@
 			name = image;
 			sourceTree = "<group>";
 		};
-		9A71C31B1C04456B00604826 /* hanguk.ipad */ = {
-			isa = PBXGroup;
-			children = (
-				9A71C31C1C04456B00604826 /* AppDelegate.swift */,
-				9A71C31E1C04456B00604826 /* ViewController.swift */,
-				9A71C3201C04456B00604826 /* Main.storyboard */,
-				9A71C3231C04456B00604826 /* Assets.xcassets */,
-				9A71C3251C04456B00604826 /* LaunchScreen.storyboard */,
-				9A71C3281C04456B00604826 /* Info.plist */,
-			);
-			path = hanguk.ipad;
-			sourceTree = "<group>";
-		};
-		9A71C3301C04456B00604826 /* hanguk.ipadTests */ = {
-			isa = PBXGroup;
-			children = (
-				9A71C3311C04456B00604826 /* hanguk_ipadTests.swift */,
-				9A71C3331C04456B00604826 /* Info.plist */,
-			);
-			path = hanguk.ipadTests;
-			sourceTree = "<group>";
-		};
-		9A71C33B1C04456B00604826 /* hanguk.ipadUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9A71C33C1C04456B00604826 /* hanguk_ipadUITests.swift */,
-				9A71C33E1C04456B00604826 /* Info.plist */,
-			);
-			path = hanguk.ipadUITests;
-			sourceTree = "<group>";
-		};
 		9A8D36A31BEED6A20052B4E9 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,9 +283,6 @@
 				9AA1F5B01BDD1D590031FE17 /* hanguk */,
 				9AA1F5C51BDD1D590031FE17 /* hangukTests */,
 				9AA1F5D01BDD1D5A0031FE17 /* hangukUITests */,
-				9A71C31B1C04456B00604826 /* hanguk.ipad */,
-				9A71C3301C04456B00604826 /* hanguk.ipadTests */,
-				9A71C33B1C04456B00604826 /* hanguk.ipadUITests */,
 				9AA1F5AF1BDD1D590031FE17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -557,9 +506,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A71C3271C04456B00604826 /* LaunchScreen.storyboard in Resources */,
-				9A71C3241C04456B00604826 /* Assets.xcassets in Resources */,
-				9A71C3221C04456B00604826 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,8 +581,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A71C31F1C04456B00604826 /* ViewController.swift in Sources */,
-				9A71C31D1C04456B00604826 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +588,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A71C3321C04456B00604826 /* hanguk_ipadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A71C33D1C04456B00604826 /* hanguk_ipadUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,22 +655,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A71C3201C04456B00604826 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A71C3211C04456B00604826 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9A71C3251C04456B00604826 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A71C3261C04456B00604826 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		9AA1F5B51BDD1D590031FE17 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
