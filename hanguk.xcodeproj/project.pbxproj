@@ -931,7 +931,7 @@
 				9A71C3411C04456B00604826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9A71C3421C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipadTests" */ = {
 			isa = XCConfigurationList;
@@ -940,7 +940,7 @@
 				9A71C3441C04456B00604826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9A71C3451C04456B00604826 /* Build configuration list for PBXNativeTarget "hanguk.ipadUITests" */ = {
 			isa = XCConfigurationList;
@@ -949,7 +949,7 @@
 				9A71C3471C04456B00604826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5A91BDD1D590031FE17 /* Build configuration list for PBXProject "hanguk" */ = {
 			isa = XCConfigurationList;
@@ -958,7 +958,7 @@
 				9AA1F5D51BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5D61BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hanguk" */ = {
 			isa = XCConfigurationList;
@@ -967,7 +967,7 @@
 				9AA1F5D81BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5D91BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hangukTests" */ = {
 			isa = XCConfigurationList;
@@ -976,7 +976,7 @@
 				9AA1F5DB1BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		9AA1F5DC1BDD1D5A0031FE17 /* Build configuration list for PBXNativeTarget "hangukUITests" */ = {
 			isa = XCConfigurationList;
@@ -985,7 +985,7 @@
 				9AA1F5DE1BDD1D5A0031FE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
