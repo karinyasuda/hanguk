@@ -1,8 +1,39 @@
 # hanguk
 
 
+2015/12/14
+xmlファイルにエラー
+ファイルの位置はここ。
+
+/private/var/folders/8s/6q_0pmqj4vjg983wq_2w8qkr0000gn/T/B598CE75-BE3A-424A-A0B4-7E0C0D51CC23
+違うと言われているところが見つけられない
+
+全文はこちら
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="software5.3" xmlns="http://apple.com/itunes/importer">
+<software_assets apple_id="1054879622"
+bundle_short_version_string="1.1"
+bundle_version="1.1.9"
+bundle_identifier="com.karin.hanguk00"
+app_platform="ios">
+<asset type="bundle">
+<data_file>
+<file_name>hanguk.ipa</file_name>
+<checksum type="md5">8a85ff78fe51988f5f0f2945b28b4ec5</checksum>
+<size>28235914</size>
+</data_file>
+</asset>
+</software_assets>
+</package>
+
+
+
+
+
+
+
 2015/10/24
-バナーのサイズに関しての表を追加しておく。
+    バナーのサイズに関しての表を追加しておく。
 
 
 
