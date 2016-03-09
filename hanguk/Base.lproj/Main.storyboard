@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rso-gI-jfh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rso-gI-jfh">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -93,7 +93,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLV-ki-r6O">
-                                <rect key="frame" x="160" y="522" width="110" height="32"/>
+                                <rect key="frame" x="160" y="520" width="110" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.53960463780000001" blue="0.1352693324" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="9cK-ZS-AAw"/>
@@ -147,6 +147,7 @@
                             <constraint firstItem="Ipo-7E-mpb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yh2-TN-2hi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MnW-pe-S7c" secondAttribute="trailing" constant="45" id="an3-vF-jg8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mTr-vv-Bem" secondAttribute="bottom" id="ex4-pm-La3"/>
+                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="8uu-Gx-Sfk" secondAttribute="bottom" constant="30" id="fck-sE-Vx1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8uu-Gx-Sfk" secondAttribute="trailing" constant="45" id="hUl-mE-wgc"/>
                             <constraint firstItem="a0N-91-IOl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="lZK-MR-TXF"/>
                             <constraint firstItem="ujW-Pe-uff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="nJY-SQ-bID"/>
